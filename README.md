@@ -6,13 +6,17 @@
 <br/>
 <div align="center">
 
-🔭 I’m currently working on a delivery module for an eCommerce app
+🚀 Code Alchemist | Flutter Maestro | Tech Visionary
 
-🌱 I’m currently learning MapBox, Firebase, Supabase
+👋 Hey, I’m Wilson Kumalo, a passionate software developer and tech enthusiast with a keen focus on Flutter. My journey in the world of mobile development has been all about crafting stunning, high-performance apps that leave a lasting impact. I’m always on the cutting edge of Flutter trends and techniques, transforming complex ideas into sleek, seamless experiences.
 
-💬 Ask me about Flutter, Firebase, or anything here
+💡 My expertise doesn’t stop at Flutter—I’m well-versed in a wide array of technologies, including Node.js, Firebase, GraphQL, WooCommerce, and MapBox. I thrive on creating end-to-end solutions, whether it’s integrating real-time databases, building robust backends, or designing intuitive UI/UX that resonates with users.
 
-⚡ Fun fact Game of Thrones Night's Watch cloaks are made from Ikea rugs
+⚡ Beyond Flutter, I have a solid command of Docker, Supabase, AWS, and React. I’m constantly exploring new tech landscapes, pushing the boundaries of what’s possible, and leveraging the power of modern tools to bring ideas to life.
+
+🎯 My approach to development is all about innovation and precision. From optimizing every pixel to ensuring that every function runs like clockwork, I’m dedicated to delivering exceptional digital experiences. Whether it’s a cutting-edge eCommerce platform or a groundbreaking mobile app, I bring a unique blend of creativity and technical prowess to the table.
+
+🌟 When I’m not immersed in code, you’ll find me diving deep into the latest tech trends, brainstorming groundbreaking ideas, or collaborating with like-minded innovators to create something extraordinary. I’m on a mission to build the future, one line of code at a time.
  </div>
 <div align="center"> 
   <a href="mailto:kumalowilson900@gmail.com">
