@@ -2,11 +2,11 @@
 <h1 align="center">
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi+There!+👋;+I'm+Wilson+Kumalo!;" />
 </h1>
-<h3 align="center">🚀 Passionate Flutter dev creating stunning mobile experiences. Always chasing the latest Flutter trends & techniques. Let's build extraordinary apps together!</h3>
+<h3 align="center">🚀 Code Alchemist | Flutter Maestro | Tech Visionary 🚀</h3>
 <br/>
 <div align="center">
 
-🚀 Code Alchemist | Flutter Maestro | Tech Visionary
+
 
 👋 Hey, I’m Wilson Kumalo, a passionate software developer and tech enthusiast with a keen focus on Flutter. My journey in the world of mobile development has been all about crafting stunning, high-performance apps that leave a lasting impact. I’m always on the cutting edge of Flutter trends and techniques, transforming complex ideas into sleek, seamless experiences.
 
