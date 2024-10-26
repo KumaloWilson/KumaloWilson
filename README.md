@@ -7,17 +7,16 @@
 <div align="center">
 
 
+👋 Hey, I’m Wilson Kumalo! A passionate software developer and tech enthusiast with a deep focus on Flutter. My journey in mobile development has been about pushing boundaries, creating high-performance, visually captivating apps that make an impact. I’m always on top of Flutter trends and techniques, transforming complex ideas into sleek, seamless user experiences.
 
-👋 Hey, I’m Wilson Kumalo, a passionate software developer and tech enthusiast with a keen focus on Flutter. My journey in the world of mobile development has been all about crafting stunning, high-performance apps that leave a lasting impact. I’m always on the cutting edge of Flutter trends and techniques, transforming complex ideas into sleek, seamless experiences.
+💡 My tech expertise goes far beyond Flutter—I’m well-versed in a vast tech stack that includes Node.js, Firebase, GraphQL, WooCommerce, MapBox, and more. Whether it’s integrating real-time databases, building robust backends, or crafting intuitive UI/UX, I thrive on creating end-to-end solutions that resonate with users.
 
-💡 My expertise doesn’t stop at Flutter—I’m well-versed in a wide array of technologies, including Node.js, Firebase, GraphQL, WooCommerce, and MapBox. I thrive on creating end-to-end solutions, whether it’s integrating real-time databases, building robust backends, or designing intuitive UI/UX that resonates with users.
+🚀 Beyond Flutter, my technical toolkit is packed with Docker, Supabase, AWS, React, MongoDB, Google Maps, Azure, FastAPI, Flask, and Next.js. I’m also skilled in ML and AI using Python, harnessing frameworks like TensorFlow, scikit-learn, and PyTorch to bring data-driven ideas to life. My expertise even stretches into Java, with experience in Spring Boot for enterprise-grade backend services.
 
-⚡ Beyond Flutter, I have a solid command of Docker, Supabase, AWS, and React. I’m constantly exploring new tech landscapes, pushing the boundaries of what’s possible, and leveraging the power of modern tools to bring ideas to life.
+🎯 Precision and innovation are at the core of my development approach. From optimizing every pixel to ensuring every function runs flawlessly, I’m committed to delivering exceptional digital experiences. Whether it’s a pioneering eCommerce platform, a powerful mobile app, or cutting-edge AI integrations, I bring a unique blend of creativity and technical prowess.
 
-🎯 My approach to development is all about innovation and precision. From optimizing every pixel to ensuring that every function runs like clockwork, I’m dedicated to delivering exceptional digital experiences. Whether it’s a cutting-edge eCommerce platform or a groundbreaking mobile app, I bring a unique blend of creativity and technical prowess to the table.
-
-🌟 When I’m not immersed in code, you’ll find me diving deep into the latest tech trends, brainstorming groundbreaking ideas, or collaborating with like-minded innovators to create something extraordinary. I’m on a mission to build the future, one line of code at a time.
- </div>
+🌟 Always exploring new tech landscapes, I’m on a mission to build the future, one line of code at a time. When I’m not deep in code, I’m diving into the latest tech trends, brainstorming groundbreaking ideas, and collaborating with like-minded innovators. Let’s shape what’s next together!
+</div>
 <div align="center"> 
   <a href="mailto:kumalowilson900@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red" />
