@@ -28,19 +28,25 @@ My vision is clear: to blend innovation with functionality, to deliver groundbre
 
 🎉 Let’s connect and shape the future—one line of code, one immersive experience, one groundbreaking solution at a time!  
  
-
-</div>
 <div align="center"> 
+  <a href="https://ko-fi.com/X8X01AFOO8" target="_blank">
+    <img src="https://img.shields.io/badge/Support%20me%20on%20Ko--fi-ff5f5f?style=for-the-badge&logo=kofi&logoColor=white" alt="Ko-fi" />
+  </a>
+
   <a href="mailto:kumalowilson900@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red" />
+    <img src="https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red" alt="Gmail" />
   </a>
+  
   <a href="https://www.linkedin.com/in/wilson-kumalo-733550243/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" />
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
+  
   <a href="https://wilson-portfolio-kjts.onrender.com/" target="_blank">
-     <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white" target="_blank" /> <!-- sqlite, safari, google-chrome are other good icon options -->
+    <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white" alt="Portfolio" />
   </a>
 </div>
+
+
  <hr/>
 <h2 align="center">⚒️ Languages | Frameworks | Tools ⚒️</h2>
 <br/>
