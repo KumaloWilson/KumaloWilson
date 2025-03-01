@@ -1,7 +1,7 @@
 [![committers.top badge](https://user-badge.committers.top/zimbabwe_private/KumaloWilson.svg)](https://user-badge.committers.top/zimbabwe_private/KumaloWilson)
 <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=KumaloWilson.KumaloWilson" />
 <h1 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hello+There!+👋;+I'm+Wilson+Kumalo!;" />
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=8000&lines=Hello+There!+👋;+I'm+Wilson+Kumalo!;" />
 </h1>
 <h3 align="center">🚀 Code Alchemist | Flutter Doctor | Tech Visionary | Innovation Architect 🚀</h3>
 <br/>
@@ -90,6 +90,6 @@ My vision is clear: to blend innovation with functionality, to deliver groundbre
 <hr/>
 <br/>
 <h1 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=600&height=70&duration=6000&lines=✨+Thank+You+for+Stopping+By!+✨;🙌+I'm+grateful+you+visited+my+GitHub+page!;🚀+Let's+build+something+amazing+together!;" />
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=600&height=70&duration=8000&lines=✨+Thank+You+for+Stopping+By!+✨;🙌+I'm+grateful+you+visited+my+profile!;🚀+Let's+build+something+amazing+together!;" />
 </h1>
 <br/>
