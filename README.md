@@ -51,7 +51,7 @@
 
 ## ⚡ **Tech Stack**
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=flutter,dart,react,js,ts,nodejs,python,java,html,css,tailwind,express,mongodb,mysql,postgres,firebase,supabase,docker,aws,azure,linux,bash" />
+  <img src="https://skillicons.dev/icons?i=flutter,dart,react,js,ts,nodejs,laravel,php,python,java,html,css,tailwind,express,mongodb,mysql,postgres,firebase,supabase,docker,aws,azure,linux,bash" />
 </p>
 
 ---
