@@ -19,19 +19,15 @@
 👋 **Hey, I’m Wilson Kumalo!** A passionate **software developer** and **tech enthusiast** with expertise in **Flutter, AI, AR/XR, and IoT**. My mission? **Building futuristic, high-performance applications** that redefine digital experiences.  
 
 💡 **I specialize in:**  
-- **Full-stack development** (Flutter, React, Node.js, FastAPI, Spring Boot)  
+- **Full-stack development** (Flutter, React, Node.js, FastAPI, Laravel, Flask, Spring Boot)  
 - **Machine Learning & AI** (TensorFlow, PyTorch, OpenAI APIs)  
 - **Cloud & DevOps** (AWS, Firebase, Docker, Supabase)  
 - **Geospatial Tech & Mapping** (Google Maps, MapBox, ARCore)  
-- **Cybersecurity & IoT**  
 
 ---
 
 ## 🚀 **Current Projects**
 🎯 I'm currently working on some groundbreaking innovations:
-
-### 🔹 **👁️ Lucid Eye - AI Blind Assistant**  
-> A mobile app using **AI + CV** to assist visually impaired users in real-time.
 
 ### 🔹 **🗺️ AR Navigation & Geospatial Tech**  
 > Developing **XR-powered navigation** for campuses & urban spaces using **ARCore + Google Geospatial API**.
