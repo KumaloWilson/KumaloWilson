@@ -9,7 +9,7 @@
     <img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" width="300px"/>
 </p>
 
-<h3 align="center">🚀 Code Alchemist | Flutter Wizard | AI Visionary | Innovation Architect 🚀</h3>
+<h3 align="center">🚀 Code Alchemist | Flutter Doctor | AI Visionary | Innovation Architect 🚀</h3>
 <br/>
 
 ---
@@ -74,6 +74,11 @@
 <p align="center">
   <img alt="Snake animation" src="https://raw.githubusercontent.com/KumaloWilson/KumaloWilson/output/github-contribution-grid-snake.svg" />
 </p>
+
+---
+
+## **Graph Contributions**
+![Wilson's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=KumaloWilson&bg_color=0d1117&color=38bdf8&line=2563eb&point=60a5fa&area=true&hide_border=true)
 
 ---
 
