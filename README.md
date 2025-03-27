@@ -9,7 +9,7 @@
     <img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" width="300px"/>
 </p>
 
-<h3 align="center">🚀 Code Alchemist | Flutter Doctor | AI Visionary | Innovation Architect 🚀</h3>
+<h3 align="center">🚀 Code Alchemist | Flutter Doctor | Visionary | Innovation Architect 🚀</h3>
 <br/>
 
 ---
