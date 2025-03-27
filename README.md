@@ -1,4 +1,4 @@
-ax[![committers.top badge](https://user-badge.committers.top/zimbabwe_private/eisax.svg)](https://user-badge.committers.top/zimbabwe_private/eisax)
+[![committers.top badge](https://user-badge.committers.top/zimbabwe_private/KumaloWilson.svg)](https://user-badge.committers.top/zimbabwe_private/KumaloWilson)
 <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=KumaloWilson.KumaloWilson" />
 
 <h1 align="center">
