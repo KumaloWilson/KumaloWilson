@@ -108,13 +108,28 @@ const wilson = {
 <!-- GitHub Stats Section -->
 <h2 align="center">📈 GitHub Stats</h2>
 <div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=KumaloWilson&show_icons=true&count_private=true&hide_border=true&title_color=38BDF8&icon_color=2563EB&text_color=FFFFFF&bg_color=0D1117" />
-  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=KumaloWilson&background=0D1117&border=false&stroke=38BDF8&ring=2563EB&fire=EF4444&currStreakNum=FFFFFF&sideNums=38BDF8&currStreakLabel=FFFFFF&sideLabels=FFFFFF&dates=FFFFFF" />
+  <img src="https://github-readme-stats.vercel.app/api?username=KumaloWilson&show_icons=true&count_private=true&hide_border=true&title_color=60a5fa&icon_color=2563eb&text_color=ffffff&bg_color=0d1117" alt="Wilson's GitHub Stats" width="49%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=KumaloWilson&theme=github-dark-blue&hide_border=true&stroke=0000&background=0D1117&ring=60a5fa&fire=60a5fa&currStreakLabel=60a5fa" alt="GitHub Streak Stats" width="49%" />
 </div>
 
 <div align="center">
-  <img width="38%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KumaloWilson&layout=compact&hide_border=true&title_color=38BDF8&text_color=FFFFFF&bg_color=0D1117" />
-  <img width="60%" src="https://github-profile-trophy.vercel.app/?username=KumaloWilson&theme=algolia&row=1&column=6&no-frame=true&margin-w=15" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KumaloWilson&layout=compact&hide_border=true&title_color=60a5fa&text_color=ffffff&bg_color=0d1117" alt="Most Used Languages" />
+</div>
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=KumaloWilson&theme=nord&row=1&column=6&margin-h=15&margin-w=15&no-bg=true" alt="GitHub Trophies" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=KumaloWilson&bg_color=0d1117&color=60a5fa&line=2563eb&point=60a5fa&area=true&hide_border=true" alt="Contribution Graph" />
+</div>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/KumaloWilson/KumaloWilson/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+</div>
+
+<div align="center">
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
 </div>
 
 <!-- Contribution Graph Section -->
