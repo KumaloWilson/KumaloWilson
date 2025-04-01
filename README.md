@@ -19,103 +19,90 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,3,30&height=200&section=header&text=Flutter%20Doctor&fontSize=70&fontAlignY=35&animation=fadeIn&fontColor=ffffff" width="100%"/>
 </p>
 
-<!-- About Me Section with Animated Dev -->
+<h3 align="center">
+  <code>🚀 Code Alchemist | Flutter Doctor | Innovation Architect 🚀</code>
+</h3>
+
+<hr>
+
 <div align="center">
-  <img align="right" width="400" src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" />
+  <img src="https://user-images.githubusercontent.com/74038190/213910845-af37a709-8995-40d6-be59-724526e3c3d7.gif" width="900">
+</div>
+
+## 🧠 About Me
+
+```typescript
+const wilson = {
+  location: "Zimbabwe",
+  role: "Software Developer & Tech Innovator",
+  specialties: ["Flutter", "AI/ML", "AR/XR", "IoT"],
+  mission: "Building futuristic applications that redefine digital experiences",
+  expertise: {
+    frontend: ["Flutter", "React", "TypeScript", "HTML/CSS", "Tailwind"],
+    backend: ["Node.js", "FastAPI", "Laravel", "Flask", "Spring Boot"],
+    ai: ["TensorFlow", "PyTorch", "OpenAI APIs", "On-device ML"],
+    cloud: ["AWS", "Firebase", "Docker", "Supabase"],
+    geo: ["Google Maps", "MapBox", "ARCore", "Geospatial APIs"]
+  },
+  currentlyLearning: ["Edge ML", "Web3", "Advanced XR Development"]
+};
+```
+
+## 🔥 Current Projects
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="https://user-images.githubusercontent.com/74038190/216655813-c9147cb2-cfee-4a9f-98ed-6d0293897b3a.png" width="100" /><br>
+      <strong>🗺️ AR Navigation Platform</strong><br>
+      XR-powered navigation for campuses using ARCore + Geospatial API
+    </td>
+    <td align="center" width="50%">
+      <img src="https://user-images.githubusercontent.com/74038190/212257460-738ff738-247f-4445-a718-cdd0ca76e2db.gif" width="100" /><br>
+      <strong>🔋 IoT Energy Management</strong><br>
+      Smart energy monitoring platform for optimizing consumption
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="100" /><br>
+      <strong>📊 Web Analytics for Universities</strong><br>
+      Browser extension for e-learning engagement tracking
+    </td>
+    <td align="center">
+      <img src="https://user-images.githubusercontent.com/74038190/216656977-ef584e20-9a41-4bad-b7ea-028a5f0c1646.gif" width="100" /><br>
+      <strong>🌍 PocketGenie - Offline AI</strong><br>
+      On-device LLMs for instant knowledge access
+    </td>
+  </tr>
+</table>
+
+## ⚡ Technology Arsenal
+
+<div align="center">
   
-  <div align="left" style="width: 50%">
-    <h2>🧙‍♂️ About Me</h2>
-    <p>
-      I'm a <b>Software Developer</b> and <b>Tech Visionary</b> from Zimbabwe with expertise in <b>Flutter</b>, <b>AI</b>, <b>AR/XR</b>, and <b>IoT</b>. My passion lies in creating futuristic applications that transform digital experiences.
-    </p>
-    <p>
-      I blend creativity with technical excellence to build solutions that matter.
-    </p>
-  </div>
-</div>
-
-<!-- Expertise Areas with Icons -->
-<h2 align="center">💡 Areas of Expertise</h2>
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg" width="40" height="40"/><br>
-        <b>Mobile & Cross-platform</b><br>
-        Flutter, React Native
-      </td>
-      <td align="center">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg" width="40" height="40"/><br>
-        <b>AI & Machine Learning</b><br>
-        TensorFlow, PyTorch, OpenAI
-      </td>
-      <td align="center">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg" width="40" height="40"/><br>
-        <b>Cloud & DevOps</b><br>
-        AWS, Firebase, Docker
-      </td>
-      <td align="center">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/google/google-original.svg" width="40" height="40"/><br>
-        <b>Geospatial & AR</b><br>
-        ARCore, MapBox, Google Maps
-      </td>
-    </tr>
-  </table>
-</div>
-
-<!-- Current Projects Section -->
-<h2 align="center">🚀 Current Projects</h2>
-<div align="center">
-  <table>
-    <tr>
-      <td>
-        <h3>🗺️ AR Navigation & Geospatial Platform</h3>
-        <p>Developing XR-powered campus navigation using ARCore & Google Geospatial API.</p>
-        <img src="https://img.shields.io/badge/Status-In_Progress-blue?style=flat-square&logo=googleearth&logoColor=white" />
-      </td>
-      <td>
-        <h3>🔋 IoT Energy Management System</h3>
-        <p>Smart energy monitoring platform for optimizing appliance energy consumption.</p>
-        <img src="https://img.shields.io/badge/Status-Beta_Testing-purple?style=flat-square&logo=smartthings&logoColor=white" />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <h3>📊 Web Analytics for Universities</h3>
-        <p>Browser extension collecting real-time analytics for student engagement.</p>
-        <img src="https://img.shields.io/badge/Status-Developing-orange?style=flat-square&logo=googleanalytics&logoColor=white" />
-      </td>
-      <td>
-        <h3>🌍 PocketGenie - Offline AI Chatbot</h3>
-        <p>On-device AI for instant knowledge access without internet connection.</p>
-        <img src="https://img.shields.io/badge/Status-Prototype-green?style=flat-square&logo=openai&logoColor=white" />
-      </td>
-    </tr>
-  </table>
-</div>
-
-<!-- Tech Stack Section -->
-<h2 align="center">⚡ Tech Stack</h2>
-<div align="center">
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
-  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" />
+  ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
+  ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
+  ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+  ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+  ![Node.js](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+  ![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white)
+  ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+  ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
+  ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+  ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+  ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
+  ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+  ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+  ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 </div>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
-  <img src="https://img.shields.io/badge/Supabase-181818?style=for-the-badge&logo=supabase&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />
-  <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
+  <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/29fd6286-4e7b-4d6c-818f-c4765d5e39a9" width="100">
+  <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/67f477ed-6624-42da-99f0-1a7b1a16eecb" width="100">
+  <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/398b19b1-9aae-4c1f-8bc0-d172a2c08d68" width="100">
+  <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/de038172-e903-4951-926c-755878deb0b4" width="100">
+  <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/3b4607e1-1cc6-41f1-926f-892ae880e7a5" width="100">
 </div>
 
 <!-- GitHub Stats Section -->
@@ -170,3 +157,4 @@
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com/?font=Poppins&size=30&center=true&vCenter=true&width=800&height=100&duration=4000&color=38BDF8&lines=Thanks+for+visiting!;Let's+build+something+amazing+together!;Connect+with+me+today!" alt="Typing SVG"/>
 </div>
+
