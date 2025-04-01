@@ -1,9 +1,21 @@
 [![committers.top badge](https://user-badge.committers.top/zimbabwe_private/KumaloWilson.svg)](https://user-badge.committers.top/zimbabwe_private/KumaloWilson)
+
+
+<div id="header1" align="center">
+  
+  ![badge](https://aktive.kerolloz.dev/zimbabwe/KumaloWilson?label=&color=12100E&style=for-the-badge&rnkPrefix=Ranked%20&rnkSuffix=%20In%20Zimbabwe)
+  ![](https://hit.yhype.me/github/profile?user_id=121203923)
+</div>
+
+
+<div id="view" align="center">
+
 <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=KumaloWilson.KumaloWilson" />
 
 <h1 align="center">
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=600&height=70&duration=8000&lines=Hello+There!+👋;+I'm+Wilson+Kumalo!;">
 </h1>
+
 
 <p align="center">
     <img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" width="300px"/>
