@@ -120,13 +120,6 @@ const wilson = {
   <img src="https://github-profile-trophy.vercel.app/?username=KumaloWilson&theme=nord&row=1&column=6&margin-h=15&margin-w=15&no-bg=true" alt="GitHub Trophies" />
 </div>
 
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=KumaloWilson&bg_color=0d1117&color=60a5fa&line=2563eb&point=60a5fa&area=true&hide_border=true" alt="Contribution Graph" />
-</div>
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/KumaloWilson/KumaloWilson/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
-</div>
 
 <div align="center">
   <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
