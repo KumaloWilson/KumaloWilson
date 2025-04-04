@@ -109,7 +109,7 @@ const wilson = {
 <h2 align="center">📈 GitHub Stats</h2>
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=KumaloWilson&show_icons=true&count_private=true&hide_border=true&title_color=60a5fa&icon_color=2563eb&text_color=ffffff&bg_color=0d1117" alt="Wilson's GitHub Stats" width="49%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=KumaloWilson&theme=github-dark-blue&hide_border=true&stroke=0000&background=0D1117&ring=60a5fa&fire=60a5fa&currStreakLabel=60a5fa" alt="GitHub Streak Stats" width="49%" />
+  <img src="https://github-readme-streak-stats-salesp07.vercel.app/?user=KumaloWilson&count_private=true&hide_border=true&theme=react&background=0d1117" alt="Wilson's Streak Stats" width="49%" />
 </div>
 
 <div align="center">
@@ -124,6 +124,8 @@ const wilson = {
 <div align="center">
   <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
 </div>
+
+
 
 <!-- Contribution Graph Section -->
 <h2 align="center">🔥 Contribution Activity</h2>
