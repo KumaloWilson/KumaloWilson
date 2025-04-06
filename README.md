@@ -4,7 +4,7 @@
     <img src="https://user-badge.committers.top/zimbabwe_private/KumaloWilson.svg" alt="Top Committer Badge"/>
   </a>
   
-  <img src="https://img.shields.io/badge/🏆_%234_Top_Committer_In_Zimbabwe-red?style=for-the-badge&labelColor=000000" alt="Top Committer Zimbabwe Badge"/>
+  <img src="https://img.shields.io/badge/🏆_%233_Top_Committer_In_Zimbabwe-red?style=for-the-badge&labelColor=000000" alt="Top Committer Zimbabwe Badge"/>
   
   <img src="https://visitor-badge.laobi.icu/badge?page_id=KumaloWilson.KumaloWilson" alt="Profile Visitors Badge"/>
 </div>
