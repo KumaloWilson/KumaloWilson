@@ -34,12 +34,12 @@
 ```typescript
 const wilson = {
   location: "Zimbabwe",
-  role: "Software Developer & Tech Innovator",
-  specialties: ["Flutter", "AI/ML", "AR/XR", "IoT"],
+  role: "Software Engineer & Tech Innovator",
+  specialties: ["Mobile Development", "Web Development", "AI/ML", "AR/XR"],
   mission: "Building futuristic applications that redefine digital experiences",
   expertise: {
-    frontend: ["Flutter", "React", "TypeScript", "HTML/CSS", "Tailwind"],
-    backend: ["Node.js", "FastAPI", "Laravel", "Flask", "Spring Boot"],
+    frontend: ["Flutter", "React", "NextJs", "VueJs", "TypeScript", "HTML/CSS", "Tailwind"],
+    backend: ["Node.js", "Express.js", "FastAPI", "Laravel", "Flask", "Spring Boot"],
     ai: ["TensorFlow", "PyTorch", "OpenAI APIs", "On-device ML"],
     cloud: ["AWS", "Firebase", "Docker", "Supabase"],
     geo: ["Google Maps", "MapBox", "ARCore", "Geospatial APIs"]
