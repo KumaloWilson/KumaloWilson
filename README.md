@@ -1,6 +1,3 @@
-  <!--Banner-->
-![KumaloWilson Banner Image](./banner.jpeg)
-
 
 <!-- Badges Section -->
 <div align="center">
@@ -13,20 +10,14 @@
   </a>
 
 
-  <p align="left">
-  <img src="https://komarev.com/ghpvc/?username=Kiran1689&label=Profile%20views&color=770677&style=for-the-badge&logo=star" alt="Kiran1689" style="padding-right:20px;" />
-</p>
+  <img src="https://komarev.com/ghpvc/?username=KumaloWilson&label=Profile%20views&color=770677&style=for-the-badge&logo=star" alt="Kiran1689" style="padding-right:20px;" />
 </div>
 
-<!-- Animated Header -->
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Poppins&size=40&center=true&vCenter=true&width=800&height=100&duration=4000&color=38BDF8&lines=Hello+World!+👋;I'm+Wilson+Kumalo;Software+Engineer+%26+Innovator" alt="Typing SVG"/>
-</div>
 
-<!-- Profile Banner -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,3,30&height=200&section=header&text=Flutter%20Doctor&fontSize=70&fontAlignY=35&animation=fadeIn&fontColor=ffffff" width="100%"/>
-</p>
+  <!--Banner-->
+![KumaloWilson Banner Image](./banner.jpeg)
+
+
 
 <h3 align="center">
   <code>🚀 Code Alchemist | Flutter Doctor | Innovation Architect 🚀</code>
