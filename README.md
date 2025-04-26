@@ -1,16 +1,21 @@
+  <!--Banner-->
+![KumaloWilson Banner Image](./banner.jpeg)
+
+
 <!-- Badges Section -->
 <div align="center">
   <a href="https://user-badge.committers.top/zimbabwe_private/KumaloWilson" target="_blank">
     <img src="https://user-badge.committers.top/zimbabwe_private/KumaloWilson.svg" alt="Top Committer Badge"/>
   </a>
 
-
   <a href="https://user-badge.committers.top/zimbabwe_private/KumaloWilson" target="_blank">
     <img src="https://img.shields.io/badge/🏆_%233_Top_Committer_In_Zimbabwe-red?style=for-the-badge&labelColor=000000" alt="Top Committer Zimbabwe Badge"/>
   </a>
 
 
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=KumaloWilson.KumaloWilson" alt="Profile Visitors Badge"/>
+  <p align="left">
+  <img src="https://komarev.com/ghpvc/?username=Kiran1689&label=Profile%20views&color=770677&style=for-the-badge&logo=star" alt="Kiran1689" style="padding-right:20px;" />
+</p>
 </div>
 
 <!-- Animated Header -->
