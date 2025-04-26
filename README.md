@@ -26,8 +26,6 @@
 <hr>
 
 <div align="center">
-  <!--Languages and Tools Section-->       
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./Skills_Animation_Dark.gif">
   <source media="(prefers-color-scheme: light)" srcset="./Skills_Animation_White.gif">
@@ -54,7 +52,6 @@ const wilson = {
 };
 ```
 
-## 🔥 Current Projects
 
 <table>
   <tr>
@@ -122,9 +119,26 @@ const wilson = {
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KumaloWilson&layout=compact&hide_border=true&title_color=60a5fa&text_color=ffffff&bg_color=0d1117" alt="Most Used Languages" />
 </div>
 
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=KumaloWilson&theme=nord&row=1&column=6&margin-h=15&margin-w=15&no-bg=true" alt="GitHub Trophies" />
-</div>
+
+<!--Trophies Section-->   
+<h2 align="center">🏆 Gɪᴛʜᴜʙ Tʀᴏᴘʜɪᴇs 🏆</h2>
+<p align="center">
+  <a href="https://github.com/Kiran1689">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=Kiran1689&no-bg=true&row=2&column=6&margin-w=20&margin-h=20&theme=monokai">
+      <source media="(prefers-color-scheme: light)" srcset="https://github-profile-trophy.vercel.app/?username=Kiran1689&no-bg=true&row=2&column=6&margin-w=20&margin-h=20">
+      <img alt="GitHub Trophies" src="https://github-profile-trophy.vercel.app/?username=Kiran1689&no-bg=true&no-frame=true&row=2&column=6&margin-w=20&margin-h=20">
+    </picture>
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/daytonaio/daytona">
+    <img
+      src="https://api.vaunt.dev/v1/github/entities/Kiran1689/achievements?format=svg&limit=6"
+      width="400"
+    />
+  </a>
+</p>
 
 
 <div align="center">
