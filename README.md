@@ -118,7 +118,7 @@ const wilson = {
       <h3 align="center"><strong>GitHub Stats</strong></h3>
       <p align="center">
         <a href="https://github.com/KumaloWilson">
-          <img align="center" src="https://github-readme-stats.vercel.app/api?username=KumaloWilson&count_private=true&show_icons=true&theme=nightowl&bg_color=0,000000,441350&title_color=c56a90&text_color=ffffff&rank_icon=github&hide=prs,issues,contribs&show=reviews,prs_merged,prs_merged_percentage" alt="GitHub Stats" />
+          <img align="center" src="https://github-readme-stats.vercel.app/api?username=KumaloWilson&count_private=true&show_icons=true&theme=nightowl&bg_color=0,000000,441350&title_color=c56a90&text_color=ffffff&show=prs_merged,prs_merged_percentage,prs,contribs&hide=issues" alt="GitHub Stats" />
         </a>
       </p>
     </td>
