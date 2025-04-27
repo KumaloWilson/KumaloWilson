@@ -2,7 +2,6 @@
 <div align="center">
   <img src="./banner.jpeg" alt="KumaloWilson Banner Image" width="100%">
   
-  <h1>Wilson Kumalo</h1>
   <h3>
     <code>🚀 Code Alchemist | Flutter Doctor | Innovation Architect 🚀</code>
   </h3>
