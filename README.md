@@ -132,6 +132,14 @@ const wilson = {
   </tr>
   <tr>
     <td width="50%">
+      <h3 align="center"><strong>Most Used Languages</strong></h3>
+      <p align="center">
+        <a href="https://github.com/KumaloWilson">
+          <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=KumaloWilson&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=8&theme=nightowl&bg_color=0,000000,441350&title_color=c56a90&text_color=ffffff" alt="languages graph" />
+        </a>
+      </p>
+    </td>
+    <td width="50%">
       <h3 align="center"><strong>Latest Project</strong></h3>
       <p align="center">
         <a href="https://github.com/KumaloWilson/Awesome-Dev-Portfolios">
@@ -139,6 +147,8 @@ const wilson = {
         </a>
       </p>
     </td>
+  </tr>
+  <tr>
     <td width="50%">
       <h3 align="center"><strong>Top Contributions</strong></h3>
       <p align="center">
@@ -147,8 +157,15 @@ const wilson = {
         </a>
       </p>
     </td>
+    <td width="50%">
+      <h3 align="center"><strong>&nbsp;</strong></h3>
+      <p align="center">
+        &nbsp;
+      </p>
+    </td>
   </tr>
 </table>
+
 
 <!-- Contribution Graph Section -->
 ## 📈 Contribution Activity
