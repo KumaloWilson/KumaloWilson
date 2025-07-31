@@ -216,7 +216,7 @@ const wilson = {
   <a href="mailto:kumalowilson900@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
-  <a href="https://wilson-portfolio-kjts.onrender.com/">
+  <a href="https://wilsonkumalo.vercel.app/">
     <img src="https://img.shields.io/badge/Portfolio-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white"/>
   </a>
   <a href="https://ko-fi.com/X8X01AFOO8">
