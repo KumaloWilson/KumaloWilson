@@ -8,7 +8,7 @@
   
   <!-- Badges -->
   <a href="https://user-badge.committers.top/zimbabwe_private/KumaloWilson" target="_blank">
-    <img src="https://img.shields.io/badge/🏆_%232_Top_Committer_In_Zimbabwe-red?style=for-the-badge&labelColor=770677" alt="Top Committer Zimbabwe Badge"/>
+    <img src="https://img.shields.io/badge/🏆_%233_Top_Committer_In_Zimbabwe-red?style=for-the-badge&labelColor=770677" alt="Top Committer Zimbabwe Badge"/>
   </a>
 
 <a href="https://wakatime.com/@f7004e57-3fc2-4dbc-93dd-1b52cdb2cd9f"><img src="https://wakatime.com/badge/user/f7004e57-3fc2-4dbc-93dd-1b52cdb2cd9f.svg" alt="Total time coded since Aug 19 2025" /></a>
