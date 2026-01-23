@@ -34,7 +34,7 @@
   <a href="mailto:kumalowilson900@gmail.com">
     <img src="https://img.shields.io/badge/Email-Say_Hello-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
-  <a href="https://wilsonkumalo.vercel.app/">
+  <a href="https://wilsonkumalo.dev/">
     <img src="https://img.shields.io/badge/Portfolio-Visit_Site-00C7B7?style=for-the-badge&logo=google-chrome&logoColor=white"/>
   </a>
   <a href="https://ko-fi.com/X8X01AFOO8">
@@ -259,7 +259,7 @@ const wilson: Developer = {
   <a href="mailto:kumalowilson900@gmail.com">
     <img src="https://img.shields.io/badge/Email-Let's_Talk-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836"/>
   </a>
-  <a href="https://wilsonkumalo.vercel.app/">
+  <a href="https://wilsonkumalo.dev/">
     <img src="https://img.shields.io/badge/Portfolio-View_My_Work-00C7B7?style=for-the-badge&logo=google-chrome&logoColor=white&labelColor=00C7B7"/>
   </a>
   <a href="https://ko-fi.com/X8X01AFOO8">
