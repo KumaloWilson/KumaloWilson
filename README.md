@@ -2,19 +2,19 @@
   <img src="./banner.jpeg" alt="KumaloWilson Banner" width="100%">
 
   <h1>
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=32&duration=3000&pause=1000&color=E46212&center=true&vCenter=true&width=760&lines=Hi+%F0%9F%91%8B+I'm+Wilson+Kumalo;Software+%2F+Systems+Engineer;Flutter+%2B+Backend+%2B+Infrastructure;Building+Reliable+Production+Platforms;Offline-First+%26+AI-Enabled+Products" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=32&duration=3000&pause=1000&color=C56A90&center=true&vCenter=true&width=760&lines=Hi+%F0%9F%91%8B+I'm+Wilson+Kumalo;Software+%2F+Systems+Engineer;Flutter+%2B+Backend+%2B+Infrastructure;Building+Reliable+Production+Platforms;Offline-First+%26+AI-Enabled+Products" alt="Typing SVG" />
   </h1>
 
   <p>
     <a href="https://user-badge.committers.top/zimbabwe_private/KumaloWilson" target="_blank">
-      <img src="https://img.shields.io/badge/%F0%9F%8F%86_%234_Top_Committer_In_Zimbabwe-E46212?style=for-the-badge&labelColor=1B1B1B" alt="Top Committer Zimbabwe Badge"/>
+      <img src="https://img.shields.io/badge/%F0%9F%8F%86_%234_Top_Committer_In_Zimbabwe-red?style=for-the-badge&labelColor=770677" alt="Top Committer Zimbabwe Badge"/>
     </a>
     <a href="https://wakatime.com/@f7004e57-3fc2-4dbc-93dd-1b52cdb2cd9f">
       <img src="https://wakatime.com/badge/user/f7004e57-3fc2-4dbc-93dd-1b52cdb2cd9f.svg?style=for-the-badge" alt="Coding Time"/>
     </a>
   </p>
 
-  <img src="https://komarev.com/ghpvc/?username=KumaloWilson&label=Profile%20Views&color=E46212&style=for-the-badge&logo=eye" alt="Profile Views"/>
+  <img src="https://komarev.com/ghpvc/?username=KumaloWilson&label=Profile%20Views&color=770677&style=for-the-badge&logo=eye" alt="Profile Views"/>
 
   <p>
     <a href="https://www.linkedin.com/in/wilson-kumalo-733550243/">
@@ -99,15 +99,13 @@ const wilson: Developer = {
 ![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
-
-![Next JS](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Next JS](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![Vue.js](https://img.shields.io/badge/Vue.js-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
 ![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-
 ### ⚙️ Backend & Database
-![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white)
@@ -148,7 +146,7 @@ const wilson: Developer = {
 
 ### 🎮 XR & 3D
 ![ARCore](https://img.shields.io/badge/ARCore-4285F4?style=for-the-badge&logo=google&logoColor=white)
-![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=threedotjs&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-black?style=for-the-badge&logo=three.js&logoColor=white)
 
 </div>
 
@@ -247,7 +245,7 @@ const wilson: Developer = {
   </a>
 
   <p>
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=KumaloWilson&background=060606&ring=E46212&fire=E46212&currStreakLabel=A1E645&sideLabels=FAFAFA&currStreakNum=FAFAFA&dates=A1E645&sideNums=FAFAFA&stroke=1B1B1B" alt="KumaloWilson streak stats"/>
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=KumaloWilson&theme=tokyonight" alt="KumaloWilson streak stats"/>
   </p>
 
   <p>
@@ -261,11 +259,11 @@ const wilson: Developer = {
   </p>
 
   <p>
-    <img src="https://github-readme-stats.vercel.app/api?username=KumaloWilson&count_private=true&show_icons=true&hide=contribs&theme=dark&bg_color=060606&title_color=E46212&icon_color=A1E645&text_color=FAFAFA&border_color=1B1B1B" alt="Overall Stats"/>
+    <img src="https://github-readme-stats.vercel.app/api?username=KumaloWilson&count_private=true&show_icons=true&hide=contribs" alt="Overall Stats"/>
   </p>
 
   <p>
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KumaloWilson&layout=compact&theme=dark&bg_color=060606&title_color=E46212&text_color=FAFAFA&border_color=1B1B1B" alt="Top Langs"/>
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KumaloWilson&layout=compact" alt="Top Langs"/>
   </p>
 </div>
 
@@ -281,7 +279,7 @@ const wilson: Developer = {
 
 <div align="center">
   <h2>💭 Developer Wisdom</h2>
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=18&duration=4000&pause=1000&color=E46212&center=true&vCenter=true&width=800&height=100&lines=The+best+way+to+predict+the+future+is+to+invent+it.;Code+is+like+humor.+When+you+have+to+explain+it,+it's+bad.;First,+solve+the+problem.+Then,+write+the+code.;Make+it+work,+make+it+right,+make+it+fast.;Simplicity+is+the+soul+of+efficiency." alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=18&duration=4000&pause=1000&color=C56A90&center=true&vCenter=true&width=800&height=100&lines=The+best+way+to+predict+the+future+is+to+invent+it.;Code+is+like+humor.+When+you+have+to+explain+it,+it's+bad.;First,+solve+the+problem.+Then,+write+the+code.;Make+it+work,+make+it+right,+make+it+fast.;Simplicity+is+the+soul+of+efficiency." alt="Typing SVG"/>
 </div>
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
@@ -307,11 +305,15 @@ const wilson: Developer = {
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:060606,50:1B1B1B,100:E46212&height=150&section=footer&animation=twinkling" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=150&section=footer&animation=twinkling" width="100%"/>
 
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=E46212&center=true&vCenter=true&width=600&lines=Thanks+for+visiting!+%E2%9C%A8;Let's+innovate+together!+%F0%9F%9A%80;Star+%E2%AD%90+my+repos+if+you+like+them!" alt="Footer Message"/>
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=C56A90&center=true&vCenter=true&width=600&lines=Thanks+for+visiting!+%E2%9C%A8;Let's+innovate+together!+%F0%9F%9A%80;Star+%E2%AD%90+my+repos+if+you+like+them!" alt="Footer Message"/>
 
   <br><br>
 
+like+them!" alt="Footer Message"/>
+  
+  <br><br>
+  
   <p>⭐ From <a href="https://github.com/KumaloWilson">KumaloWilson</a> with 💜</p>
 </div>
