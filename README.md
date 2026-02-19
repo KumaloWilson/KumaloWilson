@@ -3,7 +3,7 @@
   <img src="./banner.jpeg" alt="KumaloWilson Banner" width="100%">
   
   <h1>
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=32&duration=3000&pause=1000&color=C56A90&center=true&vCenter=true&width=600&lines=Hi+%F0%9F%91%8B+I'm+Wilson+Kumalo;Code+Alchemist+%E2%9C%A8;Flutter+Doctor+%F0%9F%92%89;Innovation+Architect+%F0%9F%9A%80;Full+Stack+Sorcerer+%F0%9F%A7%99%E2%80%8D%E2%99%82%EF%B8%8F" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=32&duration=3000&pause=1000&color=C56A90&center=true&vCenter=true&width=760&lines=Hi+%F0%9F%91%8B+I'm+Wilson+Kumalo;Software+%2F+Systems+Engineer;Flutter+%2B+Backend+%2B+Infrastructure;Building+Reliable+Production+Platforms;Offline-First+%26+AI-Enabled+Products" alt="Typing SVG" />
   </h1>
   
   <!-- Elite Badges Grid -->
@@ -57,37 +57,46 @@
 ```typescript
 const wilson: Developer = {
   🌍 location: "Zimbabwe",
-  💼 role: "Software Engineer & Tech Innovator",
-  🎯 mission: "Building futuristic digital experiences",
+  💼 role: "Software / Systems Engineer",
+  🎯 mission: "Designing reliable production systems end-to-end",
   
   🛠️ specialties: [
-    "Mobile Development",
-    "Web Development", 
-    "AI/ML Integration",
-    "AR/XR Experiences"
+    "System Design & Architecture",
+    "Backend Engineering & APIs",
+    "Cross-Platform Mobile Engineering (Flutter)",
+    "Infrastructure & DevOps",
+    "Offline-First & Sync Systems"
   ],
   
   ⚡ techStack: {
-    mobile: ["Flutter", "Dart", "React Native"],
-    frontend: ["React", "NextJs", "VueJs", "TypeScript"],
-    backend: ["Node.js", "Laravel", "FastAPI", "Spring Boot"],
-    ai_ml: ["TensorFlow", "PyTorch", "OpenAI APIs"],
-    cloud: ["AWS", "Firebase", "Docker", "Supabase"],
-    xr: ["ARCore", "Geospatial APIs", "3D Graphics"]
+    architecture: ["Domain Modeling", "Distributed Systems", "Scalable APIs"],
+    backend: ["Node.js", "Express", "NestJS", "Laravel", "FastAPI", "Spring Boot"],
+    data: ["PostgreSQL", "PostGIS", "Redis", "SQLite"],
+    infrastructure: ["Linux", "Docker", "Compose", "Nginx", "CI/CD"],
+    ai: ["RAG", "OpenAI APIs", "Ollama", "TensorFlow", "PyTorch"],
+    product: ["Flutter", "React", "React Native", "Expo", "NextJs", "TypeScript", "Offline-First UX"]
   },
   
   📚 currentlyLearning: [
-    "Edge ML Optimization",
-    "Web3 & Blockchain",
-    "Advanced XR Development"
+    "Edge AI optimization",
+    "Resilient distributed architectures",
+    "Healthcare interoperability at scale"
   ],
   
-  💡 philosophy: "Code with purpose, design with passion"
+  💡 philosophy: "Build systems that stay reliable under real-world pressure"
 };
 ```
 </div>
 
 <br clear="right"/>
+
+## What I Actually Work On
+
+- Production software systems across healthcare, analytics, and digital platforms
+- Backend architecture, data modeling, and integration-heavy APIs
+- Infrastructure ownership: deployment pipelines, reverse proxies, containers, and observability
+- Offline-first application design with reliable synchronization and data integrity controls
+- Practical AI integration: RAG pipelines plus self-hosted and API-based models embedded into user workflows
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
@@ -100,6 +109,8 @@ const wilson: Developer = {
 ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
 ![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
 ![Next JS](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![Vue.js](https://img.shields.io/badge/Vue.js-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
 ![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
@@ -108,24 +119,42 @@ const wilson: Developer = {
 ### ⚙️ Backend & Database
 ![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
+![PostGIS](https://img.shields.io/badge/PostGIS-Geo%20Data-336791?style=for-the-badge)
 
-### 🤖 AI/ML & Data Science
+### 🤖 AI Engineering
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![NumPy](https://img.shields.io/badge/Numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![RAG](https://img.shields.io/badge/RAG-Retrieval%20Augmented%20Generation-7B3FE4?style=for-the-badge)
+![OpenAI API](https://img.shields.io/badge/OpenAI-API-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-Self--Hosted%20LLMs-111111?style=for-the-badge)
 
-### ☁️ Cloud & DevOps
+### ☁️ Cloud, DevOps & Infrastructure
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Docker Compose](https://img.shields.io/badge/Docker_Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+
+### 🔐 Identity, Security & Interoperability
+![Keycloak](https://img.shields.io/badge/Keycloak-Identity%20%26%20Access-4D4D4D?style=for-the-badge)
+![OpenID Connect](https://img.shields.io/badge/OpenID_Connect-Auth%20Standards-EB5424?style=for-the-badge)
+![OAuth2](https://img.shields.io/badge/OAuth2-Authorization-2C8EBB?style=for-the-badge)
+![OpenHIM](https://img.shields.io/badge/OpenHIM-Health%20Interoperability-0E7C86?style=for-the-badge)
+![FHIR](https://img.shields.io/badge/FHIR-Healthcare%20Data%20Standards-DA291C?style=for-the-badge)
 
 ### 🎮 XR & 3D
 ![ARCore](https://img.shields.io/badge/ARCore-4285F4?style=for-the-badge&logo=google&logoColor=white)
