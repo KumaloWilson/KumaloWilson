@@ -7,7 +7,7 @@
 
   <p>
     <a href="https://user-badge.committers.top/zimbabwe_private/KumaloWilson" target="_blank">
-      <img src="https://img.shields.io/badge/%F0%9F%8F%86_%234_Top_Committer_In_Zimbabwe-red?style=for-the-badge&labelColor=770677" alt="Top Committer Zimbabwe Badge"/>
+      <img src="https://img.shields.io/badge/%F0%9F%8F%86_%233_Top_Committer_In_Zimbabwe-red?style=for-the-badge&labelColor=770677" alt="Top Committer Zimbabwe Badge"/>
     </a>
     <a href="https://wakatime.com/@f7004e57-3fc2-4dbc-93dd-1b52cdb2cd9f">
       <img src="https://wakatime.com/badge/user/f7004e57-3fc2-4dbc-93dd-1b52cdb2cd9f.svg?style=for-the-badge" alt="Coding Time"/>
