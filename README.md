@@ -4,15 +4,26 @@
   <h1>Wilson Kumalo</h1>
   <p>Software & Systems Engineer · Zimbabwe</p>
 
-  <p>
-    <a href="https://user-badge.committers.top/zimbabwe_private/KumaloWilson" target="_blank">
-      <img src="https://img.shields.io/badge/%F0%9F%8F%86_%235_Top_Committer_In_Zimbabwe-red?style=for-the-badge&labelColor=770677" alt="Top Committer Zimbabwe Badge"/>
-    </a>
-    <a href="https://wakatime.com/@f7004e57-3fc2-4dbc-93dd-1b52cdb2cd9f">
-      <img src="https://wakatime.com/badge/user/f7004e57-3fc2-4dbc-93dd-1b52cdb2cd9f.svg?style=for-the-badge" alt="Coding Time"/>
-    </a>
-    <img src="https://komarev.com/ghpvc/?username=KumaloWilson&label=Profile%20Views&color=770677&style=for-the-badge&logo=eye" alt="Profile Views"/>
-  </p>
+
+<p>
+  <a href="https://hub.xerj.org/contributors/KumaloWilson">
+    <img
+      src="https://hub.xerj.org/contributors/KumaloWilson/badge.svg"
+      alt="XERJ Corpus Hub Contributor"
+    />
+  </a>
+  <a href="https://wakatime.com/@f7004e57-3fc2-4dbc-93dd-1b52cdb2cd9f">
+    <img
+      src="https://wakatime.com/badge/user/f7004e57-3fc2-4dbc-93dd-1b52cdb2cd9f.svg?style=for-the-badge"
+      alt="Coding Time"
+    />
+  </a>
+  <img
+    src="https://komarev.com/ghpvc/?username=KumaloWilson&label=Profile%20Views&color=770677&style=for-the-badge&logo=eye"
+    alt="Profile Views"
+  />
+</p>
+
 
   <p>
     <a href="https://www.linkedin.com/in/wilson-kumalo-733550243/">
