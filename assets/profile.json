@@ -1,0 +1,41 @@
+{
+  "stats": {
+    "repos": 211,
+    "stars": 472,
+    "commits": 11462,
+    "followers": 34
+  },
+  "repos": {
+    "local_genai": {
+      "stars": 5,
+      "description": "LocalGenAI – Your offline AI companion, ready to assist you anytime, anywhere. Download, personalize, and chat with powerful AI models directly on your device.",
+      "url": "https://github.com/KumaloWilson/local_genai",
+      "language": "Dart"
+    },
+    "Taxi-booking-app-using-flutter-and-openstreetmap": {
+      "stars": 6,
+      "description": "This is a taxi booking app with two levels passenger and driver",
+      "url": "https://github.com/KumaloWilson/Taxi-booking-app-using-flutter-and-openstreetmap",
+      "language": "Dart"
+    },
+    "authenti-guard": {
+      "stars": 3,
+      "description": "Fraud Detection system react",
+      "url": "https://github.com/KumaloWilson/authenti-guard",
+      "language": "TypeScript"
+    },
+    "smart_learn_student_portal": {
+      "stars": 3,
+      "description": "",
+      "url": "https://github.com/KumaloWilson/smart_learn_student_portal",
+      "language": "TypeScript"
+    },
+    "chinhoyi_municipality": {
+      "stars": 4,
+      "description": "This an an house housingmanagement for the the Chinhoyi municipality.",
+      "url": "https://github.com/KumaloWilson/chinhoyi_municipality",
+      "language": "Dart"
+    }
+  },
+  "posts": []
+}

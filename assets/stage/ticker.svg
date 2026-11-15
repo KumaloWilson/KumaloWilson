@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 40" width="900" height="40" role="img" aria-label="11,462 Commits   ★   472 Stars   ★   211 Public Repos   ★   34 Followers   ★   Building Fundani + Daredzidzo / Open To Collaborations   ★   Thanks For Stopping By"><title>11,462 Commits   ★   472 Stars   ★   211 Public Repos   ★   34 Followers   ★   Building Fundani + Daredzidzo / Open To Collaborations   ★   Thanks For Stopping By</title><style>
+.pop{transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.2,1.7,.4,1) both}
+@keyframes pop{0%{transform:scale(0) rotate(-40deg);opacity:0}60%{transform:scale(1.3) rotate(8deg);opacity:1}100%{transform:scale(1) rotate(0)}}
+.wob{transform-box:fill-box;transform-origin:center;animation:wob 1.6s ease-in-out infinite alternate}
+@keyframes wob{from{transform:rotate(-4deg) translateY(-1px)}to{transform:rotate(4deg) translateY(2px)}}
+.slamL{animation:slamL .45s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes slamL{from{transform:translateX(-1100px)}to{transform:none}}
+.slamR{animation:slamR .45s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes slamR{from{transform:translateX(1100px)}to{transform:none}}
+.drop{transform-box:fill-box;transform-origin:center;animation:drop .5s cubic-bezier(.2,1.6,.4,1) both}
+@keyframes drop{from{transform:translateY(-400px) rotate(-30deg);opacity:0}to{transform:none;opacity:1}}
+.thump{transform-box:fill-box;transform-origin:center;animation:thump 1.2s ease-in-out infinite}
+@keyframes thump{0%,100%{transform:scale(1)}12%{transform:scale(1.15)}24%{transform:scale(1)}}
+.blink{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.marquee{animation:marquee linear infinite}
+@keyframes marquee{to{transform:translateX(var(--d))}}
+.type{transform-box:fill-box;transform-origin:0 50%;animation:type linear both}
+@keyframes type{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:0s!important;animation-iteration-count:1!important;animation-delay:0s!important}}
+</style><defs></defs><g transform="skewX(-14)"><rect x="20" y="6" width="866" height="28" fill="#000" stroke="#e60012" stroke-width="3"/></g><clipPath id="ucd0e58a"><rect x="18" y="10" width="860" height="23"/></clipPath><g clip-path="url(#ucd0e58a)"><g class="marquee" style="--d:-1318.2px;animation-duration:24.0s" font-family="'JetBrains Mono','Fira Code','SF Mono',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#fff"><text x="18.0" y="26" textLength="1318.2" lengthAdjust="spacing" xml:space="preserve">11,462 COMMITS   ★   472 STARS   ★   211 PUBLIC REPOS   ★   34 FOLLOWERS   ★   BUILDING FUNDANI + DAREDZIDZO / OPEN TO COLLABORATIONS   ★   THANKS FOR STOPPING BY   ★   </text><text x="1336.2" y="26" textLength="1318.2" lengthAdjust="spacing" xml:space="preserve">11,462 COMMITS   ★   472 STARS   ★   211 PUBLIC REPOS   ★   34 FOLLOWERS   ★   BUILDING FUNDANI + DAREDZIDZO / OPEN TO COLLABORATIONS   ★   THANKS FOR STOPPING BY   ★   </text></g></g></svg>

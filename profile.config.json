@@ -1,0 +1,83 @@
+{
+  "github_username": "KumaloWilson",
+  "name": [
+    "WILSON",
+    "KUMALO"
+  ],
+  "role": "SOFTWARE & SYSTEMS ENGINEER",
+  "stack": [
+    "TYPESCRIPT",
+    "FLUTTER",
+    "PYTHON",
+    "DOCKER"
+  ],
+  "location": "ZIMBABWE",
+  "runtime": "SYSTEMS",
+  "about": "I build reliable systems across backend, mobile, and infrastructure. My work spans healthcare integrations, offline-first sync, and production pipelines. Currently building Fundani and Daredzidzo: edutech platforms for low-connectivity environments.",
+  "targets": [
+    {
+      "repo": "local_genai",
+      "label": "LOCAL GENAI",
+      "tag": "OFFLINE AI"
+    },
+    {
+      "repo": "Taxi-booking-app-using-flutter-and-openstreetmap",
+      "label": "TAXI BOOKING",
+      "tag": "FLUTTER / MAPS"
+    },
+    {
+      "repo": "authenti-guard",
+      "label": "AUTHENTI-GUARD",
+      "tag": "FRAUD DETECTION"
+    },
+    {
+      "repo": "smart_learn_student_portal",
+      "label": "SMART LEARN",
+      "tag": "EDUTECH"
+    },
+    {
+      "repo": "chinhoyi_municipality",
+      "label": "CHINHOYI MUNICIPALITY",
+      "tag": "HOUSING SYSTEM"
+    }
+  ],
+  "posts": {
+    "count": 0,
+    "feed_url": ""
+  },
+  "contacts": [
+    {
+      "label": "LINKEDIN",
+      "url": "https://www.linkedin.com/in/wilson-kumalo-733550243/"
+    },
+    {
+      "label": "PORTFOLIO",
+      "url": "https://wilsonkumalo.dev/"
+    },
+    {
+      "label": "GITHUB",
+      "url": "https://github.com/KumaloWilson"
+    },
+    {
+      "label": "KO-FI",
+      "url": "https://ko-fi.com/X8X01AFOO8"
+    },
+    {
+      "label": "EMAIL",
+      "url": "mailto:kumalowilson900@gmail.com"
+    }
+  ],
+  "ticker_message": "BUILDING FUNDANI + DAREDZIDZO / OPEN TO COLLABORATIONS",
+  "badges": [
+    {
+      "label": "XERJ Corpus Hub Contributor",
+      "url": "https://hub.xerj.org/contributors/KumaloWilson",
+      "image": "https://hub.xerj.org/contributors/KumaloWilson/badge.svg"
+    },
+    {
+      "label": "Coding time on WakaTime",
+      "url": "https://wakatime.com/@f7004e57-3fc2-4dbc-93dd-1b52cdb2cd9f",
+      "image": "https://wakatime.com/badge/user/f7004e57-3fc2-4dbc-93dd-1b52cdb2cd9f.svg?style=for-the-badge"
+    }
+  ]
+}
