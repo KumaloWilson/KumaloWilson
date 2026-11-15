@@ -26,6 +26,13 @@
 <a href="https://github.com/KumaloWilson/Taxi-booking-app-using-flutter-and-openstreetmap"><img src="assets/stage/target-11.svg" width="100%" alt="TAXI BOOKING: Map-based taxi booking with passenger and driver experiences." /></a><br>
 </p>
 
+<p align="center"><img src="assets/stage/h-intel.svg" width="100%" alt="Latest blog posts" /><br>
+<a href="https://wilsonkumalo.dev/blog/vibe-coding-broken-apis-and-bank-breaches-is-something-deeper-going-on"><img src="assets/stage/post-0.svg" width="100%" alt="Vibe Coding, Broken APIs, and Bank Breaches: Is Something Deeper Going On?" /></a><br>
+<a href="https://wilsonkumalo.dev/blog/windows-12-in-2026-the-viral-rumor-the-debunking-and-what-microsoft-is-actually-building"><img src="assets/stage/post-1.svg" width="100%" alt="Windows 12 2026 Rumor Debunked: What Microsoft Is Actually Building" /></a><br>
+<a href="https://wilsonkumalo.dev/blog/vinext-how-cloudflare-rebuilt-nextjs-with-ai-in-one-week-for-dollar1100"><img src="assets/stage/post-2.svg" width="100%" alt="Vinext: Cloudflare's AI-Built Next.js Replacement (4.4x Faster, 57% Smaller)" /></a><br>
+<a href="https://wilsonkumalo.dev/blogs"><img src="assets/stage/all-posts.svg" width="100%" alt="All posts" /></a>
+</p>
+
 <p align="center"><img src="assets/stage/h-contact.svg" width="100%" alt="Contact" /><br>
 <a href="https://www.linkedin.com/in/wilson-kumalo-733550243/"><img src="assets/stage/contact-linkedin.svg" height="46" alt="Linkedin" /></a>
 <a href="https://wilsonkumalo.dev/"><img src="assets/stage/contact-portfolio.svg" height="46" alt="Portfolio" /></a>

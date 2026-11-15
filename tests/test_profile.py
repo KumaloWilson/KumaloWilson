@@ -38,6 +38,7 @@ class ProfileTests(unittest.TestCase):
             shutil.copy(ROOT / 'scripts/gen_profile.py', root / 'scripts')
             config = json.loads((ROOT / 'profile.config.json').read_text())
             config['about'] = 'Systems & software <engineer> "Wilson"'
+            config['posts']['count'] = 0
             (root / 'profile.config.json').write_text(json.dumps(config))
             data = {'stats': {'commits': 12, 'stars': 3, 'repos': 5, 'followers': 2,
                               'contributions': 120, 'private_contributions': 99,
@@ -64,11 +65,58 @@ class ProfileTests(unittest.TestCase):
             subprocess.run(command, check=True, capture_output=True)
             self.assertEqual(readme, (root / 'README.md').read_text())
             self.assertEqual(before, {p.name: p.read_bytes() for p in (root / 'assets/stage').glob('*.svg')})
+            config['posts'] = {'count': 8, 'one_per_series': False}
+            data['posts'] = [{'title': f'Series: Part {i} & more',
+                              'url': f'https://example.com/{i}', 'date': f'2026-01-0{i}'}
+                             for i in [1, 4, 2, 3]]
+            (root / 'profile.config.json').write_text(json.dumps(config))
+            (root / 'assets/profile.json').write_text(json.dumps(data))
+            subprocess.run(command, check=True, capture_output=True)
+            readme = (root / 'README.md').read_text()
+            self.assertIn('Latest blog posts', readme)
+            self.assertEqual(len(list((root / 'assets/stage').glob('post-*.svg'))), 3)
+            self.assertLess(readme.index('https://example.com/4'), readme.index('https://example.com/3'))
+            self.assertNotIn('https://example.com/1', readme)
+            for path in (root / 'assets/stage').glob('post-*.svg'):
+                ET.parse(path)
 
     def test_disabled_feed_does_not_make_network_request(self):
         fetcher = load_fetcher()
-        with patch.object(fetcher.urllib.request, 'urlopen', side_effect=AssertionError('Unexpected request')):
+        with patch.object(fetcher, 'CONFIG', {'posts': {'count': 0}}), \
+                patch.object(fetcher.urllib.request, 'urlopen', side_effect=AssertionError('Unexpected request')):
             self.assertEqual(fetcher.fetch_posts(), [])
+
+    def test_blog_archive_deduplicates_and_limits_latest_articles(self):
+        fetcher = load_fetcher()
+        archive = fetcher.BlogPage('https://example.com/blogs')
+        archive.feed(''.join(f'<a href="/blog/{i}">Article</a>' for i in [3, 3, 2, 1, 0]))
+
+        def page_for(url):
+            if url.endswith('/blogs'):
+                return archive
+            day = int(url.rsplit('/', 1)[1])
+            page = fetcher.BlogPage(url)
+            metadata = {'@graph': [{'@type': 'BlogPosting', 'headline': f'Post {day} & more',
+                                   'datePublished': f'2026-04-{day:02d}T08:00:00Z'}]}
+            page.feed('<script type="application/ld+json">' + json.dumps(metadata) + '</script>')
+            return page
+
+        config = {'posts': {'count': 10, 'archive_url': 'https://example.com/blogs'}}
+        with patch.object(fetcher, 'CONFIG', config), \
+                patch.object(fetcher, 'read_blog_page', side_effect=page_for) as read:
+            posts = fetcher.fetch_posts(limit=10)
+        self.assertEqual([p['date'] for p in posts], ['2026-04-03', '2026-04-02', '2026-04-01'])
+        self.assertEqual(read.call_count, 4)
+        self.assertEqual(posts[0]['title'], 'Post 3 & more')
+
+    def test_broken_blog_metadata_raises_for_cached_post_fallback(self):
+        fetcher = load_fetcher()
+        archive = fetcher.BlogPage('https://example.com/blogs')
+        archive.feed('<a href="/blog/new">New post</a>')
+        with patch.object(fetcher, 'CONFIG', {'posts': {'count': 3, 'archive_url': archive.base_url}}), \
+                patch.object(fetcher, 'read_blog_page', side_effect=[archive, fetcher.BlogPage('https://example.com/blog/new')]):
+            with self.assertRaisesRegex(ValueError, 'No article metadata'):
+                fetcher.fetch_posts()
 
     def test_organization_project_uses_its_own_owner(self):
         fetcher = load_fetcher()

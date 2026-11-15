@@ -59,8 +59,14 @@ and the rest of the portfolio.
   for organization projects such as `neotree/neotree`. Organization project stars
   belong to that project and are not added to your personal GitHub totals.
 - `contacts` and `badges` control the links below the project cards.
-- `posts.count` is currently zero. To show writing, set a positive count and
-  supply an RSS 2.0 feed in `posts.feed_url`. The section is hidden when empty.
+- Latest blogs: `posts.archive_url` points to `https://wilsonkumalo.dev/blogs`.
+  The fetcher deduplicates the newest-first archive links, then reads article
+  titles and publication dates from public JSON-LD. It shows at most three posts,
+  including consecutive entries from the same series. The daily workflow refreshes
+  them without a token for the website. If the site is unavailable or its metadata
+  changes, the last successful posts are retained. Set `posts.count` to zero to
+  hide the section; an RSS 2.0 `posts.feed_url` is also supported when no archive
+  URL is configured.
 - `ticker_message` controls the scrolling message beneath the contact cards.
 - SVG animation respects the viewer's reduced-motion preference.
 

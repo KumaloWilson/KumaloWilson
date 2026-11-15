@@ -15,6 +15,9 @@ import os
 import sys
 import urllib.request
 import xml.etree.ElementTree as ET
+from html.parser import HTMLParser
+from urllib.parse import urljoin, urlparse
+from email.utils import parsedate_to_datetime
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "assets", "profile.json")
@@ -112,19 +115,92 @@ def fetch_repos():
     return out
 
 
-def fetch_posts(limit=20):
-    if not FEED or CONFIG.get("posts", {}).get("count", 3) <= 0:
+class BlogPage(HTMLParser):
+    """Read public article links and JSON-LD without executing website scripts."""
+
+    def __init__(self, base_url):
+        super().__init__()
+        self.base_url = base_url
+        self.links = []
+        self.documents = []
+        self.json_parts = None
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == "a":
+            url = urljoin(self.base_url, attrs.get("href", ""))
+            parsed = urlparse(url)
+            if (parsed.netloc == urlparse(self.base_url).netloc
+                    and parsed.path.startswith("/blog/") and url not in self.links):
+                self.links.append(url)
+        if tag == "script" and attrs.get("type") == "application/ld+json":
+            self.json_parts = []
+
+    def handle_data(self, data):
+        if self.json_parts is not None:
+            self.json_parts.append(data)
+
+    def handle_endtag(self, tag):
+        if tag == "script" and self.json_parts is not None:
+            self.documents.append(json.loads("".join(self.json_parts)))
+            self.json_parts = None
+
+
+def structured_articles(value):
+    if isinstance(value, list):
+        for item in value:
+            yield from structured_articles(item)
+    elif isinstance(value, dict):
+        types = value.get("@type", [])
+        if isinstance(types, str):
+            types = [types]
+        if "BlogPosting" in types or "Article" in types:
+            yield value
+        if "@graph" in value:
+            yield from structured_articles(value["@graph"])
+
+
+def read_blog_page(url):
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=30) as response:
+        content = response.read().decode("utf-8")
+    page = BlogPage(url)
+    page.feed(content)
+    return page
+
+
+def fetch_posts(limit=3):
+    config = CONFIG.get("posts", {})
+    count = min(3, limit, config.get("count", 3))
+    if count <= 0:
+        return []
+    archive = config.get("archive_url")
+    if archive:
+        page = read_blog_page(archive)
+        posts = []
+        # The website archive is newest-first; featured links are deduplicated.
+        for url in page.links[:count]:
+            article_page = read_blog_page(url)
+            articles = [article for doc in article_page.documents
+                        for article in structured_articles(doc)]
+            if not articles:
+                raise ValueError(f"No article metadata at {url}")
+            article = articles[0]
+            date = datetime.date.fromisoformat(article["datePublished"][:10])
+            posts.append({"title": article["headline"], "url": url, "date": date.isoformat()})
+        if not posts:
+            raise ValueError("Blog archive contains no article links")
+        return sorted(posts, key=lambda post: post["date"], reverse=True)
+    if not FEED:
         return []
     req = urllib.request.Request(FEED, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        root = ET.fromstring(r.read())
+    with urllib.request.urlopen(req, timeout=30) as response:
+        root = ET.fromstring(response.read())
     posts = []
     for item in root.iter("item"):
-        pub = datetime.datetime.strptime(item.findtext("pubDate")[:16], "%a, %d %b %Y")
-        posts.append({"title": item.findtext("title"), "url": item.findtext("link"), "date": pub.strftime("%Y-%m-%d")})
-        if len(posts) >= limit:
-            break
-    return posts
+        date = parsedate_to_datetime(item.findtext("pubDate")).date()
+        posts.append({"title": item.findtext("title"), "url": item.findtext("link"), "date": date.isoformat()})
+    return sorted(posts, key=lambda post: post["date"], reverse=True)[:count]
 
 
 def main():
