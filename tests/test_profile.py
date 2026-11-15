@@ -48,12 +48,17 @@ class ProfileTests(unittest.TestCase):
             self.assertNotIn('h-intel.svg', readme)
             self.assertNotIn('github.com/basteez/local_genai', readme)
             self.assertIn('github.com/KumaloWilson/local_genai', readme)
+            self.assertIn('https://github.com/neotree/neotree', readme)
+            self.assertLess(readme.index('NEOTREE'), readme.index('IOT ATTENDANCE'))
             parser = Images()
             parser.feed(readme)
             for source in parser.sources:
                 if not source.startswith('https://'):
                     ET.parse(root / source)
             before = {p.name: p.read_bytes() for p in (root / 'assets/stage').glob('*.svg')}
+            self.assertIn(b'#0F57BE', before['hero.svg'])
+            self.assertNotIn(b'#e60012', b''.join(before.values()))
+            self.assertIn(b'Map-based taxi booking', before['target-11.svg'])
             subprocess.run(command, check=True, capture_output=True)
             self.assertEqual(readme, (root / 'README.md').read_text())
             self.assertEqual(before, {p.name: p.read_bytes() for p in (root / 'assets/stage').glob('*.svg')})
@@ -62,6 +67,16 @@ class ProfileTests(unittest.TestCase):
         fetcher = load_fetcher()
         with patch.object(fetcher.urllib.request, 'urlopen', side_effect=AssertionError('Unexpected request')):
             self.assertEqual(fetcher.fetch_posts(), [])
+
+    def test_organization_project_uses_its_own_owner(self):
+        fetcher = load_fetcher()
+        project = {'stargazerCount': 8, 'description': 'Neonatal care',
+                   'url': 'https://github.com/neotree/neotree', 'primaryLanguage': None}
+        with patch.object(fetcher, 'TARGETS', [{'repo': 'neotree', 'owner': 'neotree'}]), \
+                patch.object(fetcher, 'gql', return_value={'repository': project}) as request:
+            result = fetcher.fetch_repos()
+            self.assertEqual(request.call_args.args[1], {'o': 'neotree', 'n': 'neotree'})
+            self.assertEqual(result['neotree']['url'], project['url'])
 
     def test_commit_count_excludes_other_restricted_contributions(self):
         fetcher = load_fetcher()

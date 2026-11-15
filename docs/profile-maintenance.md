@@ -36,8 +36,15 @@ Private contribution totals are not treated as commit counts. An optional
 
 ## Personalization
 
+The cobalt accent (`#0F57BE`) is sampled from Wilson’s LinkedIn cover and is
+configured in `accent_color`. Projects follow the order in `targets`, with
+Neotree first, followed by IoT attendance, ZINWA water meters, CUT analytics,
+and the rest of the portfolio.
+
 - `targets` selects public repositories to display. Set `label`, `tag`, `url`,
-  `description`, or `wip` to override the fetched project metadata.
+  `description`, or `wip` to override the fetched project metadata. Use `owner`
+  for organization projects such as `neotree/neotree`. Organization project stars
+  belong to that project and are not added to your personal GitHub totals.
 - `contacts` and `badges` control the links below the project cards.
 - `posts.count` is currently zero. To show writing, set a positive count and
   supply an RSS 2.0 feed in `posts.feed_url`. The section is hidden when empty.

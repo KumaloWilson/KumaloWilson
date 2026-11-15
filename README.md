@@ -7,14 +7,21 @@
 
 <p align="center"><img src="assets/stage/hero.svg" width="100%" alt="Wilson Kumalo, Software &amp; Systems Engineer. 11,462 commits, 472 stars, 211 public repos." /></p>
 
-<p align="center"><img src="assets/stage/about.svg" width="100%" alt="I build reliable systems across backend, mobile, and infrastructure. My work spans healthcare integrations, offline-first sync, and production pipelines. Currently building Fundani and Daredzidzo: edutech platforms for low-connectivity environments." /></p>
+<p align="center"><img src="assets/stage/about.svg" width="100%" alt="I build reliable systems across backend, mobile, and infrastructure. Currently building Neotree, Fundani, and Daredzidzo: neonatal healthcare and offline-first edutech for low-connectivity environments. My work spans health data integrations, IoT, analytics, and production pipelines." /></p>
 
 <p align="center"><img src="assets/stage/h-targets.svg" width="100%" alt="Select target" /><br>
-<a href="https://github.com/KumaloWilson/local_genai"><img src="assets/stage/target-0.svg" width="100%" alt="LOCAL GENAI: LocalGenAI – Your offline AI companion, ready to assist you anytime, anywhere. Download, personalize, and chat with powerful AI models directly on your device." /></a><br>
-<a href="https://github.com/KumaloWilson/Taxi-booking-app-using-flutter-and-openstreetmap"><img src="assets/stage/target-1.svg" width="100%" alt="TAXI BOOKING: This is a taxi booking app with two levels passenger and driver" /></a><br>
-<a href="https://github.com/KumaloWilson/authenti-guard"><img src="assets/stage/target-2.svg" width="100%" alt="AUTHENTI-GUARD: Fraud Detection system react" /></a><br>
-<a href="https://github.com/KumaloWilson/smart_learn_student_portal"><img src="assets/stage/target-3.svg" width="100%" alt="SMART LEARN: EDUTECH" /></a><br>
-<a href="https://github.com/KumaloWilson/chinhoyi_municipality"><img src="assets/stage/target-4.svg" width="100%" alt="CHINHOYI MUNICIPALITY: This an an house housingmanagement for the the Chinhoyi municipality." /></a><br>
+<a href="https://github.com/neotree/neotree"><img src="assets/stage/target-0.svg" width="100%" alt="NEOTREE: Building neonatal care systems, offline-first sync, and health integrations." /></a><br>
+<a href="https://github.com/KumaloWilson/iot-attendance-system"><img src="assets/stage/target-1.svg" width="100%" alt="IOT ATTENDANCE: RFID attendance, device monitoring, timesheets, approvals, and audit trails." /></a><br>
+<a href="https://github.com/KumaloWilson/zinwa_water_meters"><img src="assets/stage/target-2.svg" width="100%" alt="ZINWA WATER METERS: Prepaid water accounts, token purchases, payments, and consumption tracking." /></a><br>
+<a href="https://github.com/KumaloWilson/cut_portal_web_analytics"><img src="assets/stage/target-3.svg" width="100%" alt="CUT ANALYTICS: Student portal analytics with a browser extension and real-time dashboards." /></a><br>
+<a href="https://github.com/KumaloWilson/chinhoyi_municipality"><img src="assets/stage/target-4.svg" width="100%" alt="CHINHOYI MUNICIPALITY: Housing management platform for Chinhoyi Municipality." /></a><br>
+<a href="https://github.com/KumaloWilson/local_genai"><img src="assets/stage/target-5.svg" width="100%" alt="LOCAL GENAI: On-device language models with offline, personalized conversations." /></a><br>
+<a href="https://github.com/KumaloWilson/lucideye"><img src="assets/stage/target-6.svg" width="100%" alt="LUCID EYE: Blind assistance with object detection, OCR, and text-to-speech." /></a><br>
+<a href="https://github.com/KumaloWilson/flutter_energy"><img src="assets/stage/target-7.svg" width="100%" alt="IOT ENERGY MANAGEMENT: Mobile interface for an IoT energy management system." /></a><br>
+<a href="https://github.com/KumaloWilson/fly_spotter"><img src="assets/stage/target-8.svg" width="100%" alt="FLY SPOTTER: Mobile image recognition for identifying and classifying fly species." /></a><br>
+<a href="https://github.com/KumaloWilson/smart_learn_student_portal"><img src="assets/stage/target-9.svg" width="100%" alt="SMART LEARN: Student portal within a multi-portal learning platform." /></a><br>
+<a href="https://github.com/KumaloWilson/authenti-guard"><img src="assets/stage/target-10.svg" width="100%" alt="AUTHENTI-GUARD: React interface for an AI-assisted fraud detection system." /></a><br>
+<a href="https://github.com/KumaloWilson/Taxi-booking-app-using-flutter-and-openstreetmap"><img src="assets/stage/target-11.svg" width="100%" alt="TAXI BOOKING: Map-based taxi booking with passenger and driver experiences." /></a><br>
 </p>
 
 <p align="center"><img src="assets/stage/h-contact.svg" width="100%" alt="Contact" /><br>

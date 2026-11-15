@@ -23,7 +23,7 @@ with open(os.path.join(ROOT, "profile.config.json"), encoding="utf-8") as source
     CONFIG = json.load(source)
 LOGIN = CONFIG["github_username"]
 FEED = CONFIG.get("posts", {}).get("feed_url")
-REPOS = [t["repo"] for t in CONFIG.get("targets", [])]
+TARGETS = CONFIG.get("targets", [])
 
 TOKEN = os.environ.get("STATS_TOKEN") or os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
 UA = "profile-board-generator"
@@ -82,11 +82,12 @@ def fetch_stats():
 
 def fetch_repos():
     out = {}
-    for name in REPOS:
+    for target in TARGETS:
+        name = target["repo"]
         r = gql(
             """query($o:String!,$n:String!){ repository(owner:$o,name:$n){
                  stargazerCount description url primaryLanguage{name} }}""",
-            {"o": LOGIN, "n": name},
+            {"o": target.get("owner", LOGIN), "n": name},
         )["repository"]
         if r:
             out[name] = {

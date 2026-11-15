@@ -18,4 +18,4 @@
 .type{transform-box:fill-box;transform-origin:0 50%;animation:type linear both}
 @keyframes type{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 @media (prefers-reduced-motion:reduce){*{animation-duration:0s!important;animation-iteration-count:1!important;animation-delay:0s!important}}
-</style><defs></defs><g transform="rotate(-5 95.0 34.0)"><g class="pop" style="animation-delay:0.10s"><polygon points="14,14 180,10 174,56 10,58" fill="#e60012" transform="translate(6,5)"/><polygon points="14,14 180,10 174,56 10,58" fill="#000" stroke="#000" stroke-width="2.5"/><text x="95.0" y="41.2" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="20" fill="#fff" text-anchor="middle">LINKEDIN</text></g></g></svg>
+</style><defs></defs><g transform="rotate(-5 95.0 34.0)"><g class="pop" style="animation-delay:0.10s"><polygon points="14,14 180,10 174,56 10,58" fill="#0F57BE" transform="translate(6,5)"/><polygon points="14,14 180,10 174,56 10,58" fill="#000" stroke="#000" stroke-width="2.5"/><text x="95.0" y="41.2" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="20" fill="#fff" text-anchor="middle">LINKEDIN</text></g></g></svg>

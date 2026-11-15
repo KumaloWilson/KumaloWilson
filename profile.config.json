@@ -13,32 +13,81 @@
   ],
   "location": "ZIMBABWE",
   "runtime": "SYSTEMS",
-  "about": "I build reliable systems across backend, mobile, and infrastructure. My work spans healthcare integrations, offline-first sync, and production pipelines. Currently building Fundani and Daredzidzo: edutech platforms for low-connectivity environments.",
+  "about": "I build reliable systems across backend, mobile, and infrastructure. Currently building Neotree, Fundani, and Daredzidzo: neonatal healthcare and offline-first edutech for low-connectivity environments. My work spans health data integrations, IoT, analytics, and production pipelines.",
   "targets": [
     {
-      "repo": "local_genai",
-      "label": "LOCAL GENAI",
-      "tag": "OFFLINE AI"
+      "repo": "neotree",
+      "label": "NEOTREE",
+      "tag": "NEONATAL HEALTH",
+      "description": "Building neonatal care systems, offline-first sync, and health integrations.",
+      "owner": "neotree",
+      "url": "https://github.com/neotree/neotree"
     },
     {
-      "repo": "Taxi-booking-app-using-flutter-and-openstreetmap",
-      "label": "TAXI BOOKING",
-      "tag": "FLUTTER / MAPS"
+      "repo": "iot-attendance-system",
+      "label": "IOT ATTENDANCE",
+      "tag": "ESP32 / RFID",
+      "description": "RFID attendance, device monitoring, timesheets, approvals, and audit trails."
     },
     {
-      "repo": "authenti-guard",
-      "label": "AUTHENTI-GUARD",
-      "tag": "FRAUD DETECTION"
+      "repo": "zinwa_water_meters",
+      "label": "ZINWA WATER METERS",
+      "tag": "FLUTTER / API",
+      "description": "Prepaid water accounts, token purchases, payments, and consumption tracking."
     },
     {
-      "repo": "smart_learn_student_portal",
-      "label": "SMART LEARN",
-      "tag": "EDUTECH"
+      "repo": "cut_portal_web_analytics",
+      "label": "CUT ANALYTICS",
+      "tag": "REAL-TIME DATA",
+      "description": "Student portal analytics with a browser extension and real-time dashboards."
     },
     {
       "repo": "chinhoyi_municipality",
       "label": "CHINHOYI MUNICIPALITY",
-      "tag": "HOUSING SYSTEM"
+      "tag": "CIVIC TECH",
+      "description": "Housing management platform for Chinhoyi Municipality."
+    },
+    {
+      "repo": "local_genai",
+      "label": "LOCAL GENAI",
+      "tag": "OFFLINE AI",
+      "description": "On-device language models with offline, personalized conversations."
+    },
+    {
+      "repo": "lucideye",
+      "label": "LUCID EYE",
+      "tag": "ACCESSIBILITY / AI",
+      "description": "Blind assistance with object detection, OCR, and text-to-speech."
+    },
+    {
+      "repo": "flutter_energy",
+      "label": "IOT ENERGY MANAGEMENT",
+      "tag": "IOT / FLUTTER",
+      "description": "Mobile interface for an IoT energy management system."
+    },
+    {
+      "repo": "fly_spotter",
+      "label": "FLY SPOTTER",
+      "tag": "MOBILE / ML",
+      "description": "Mobile image recognition for identifying and classifying fly species."
+    },
+    {
+      "repo": "smart_learn_student_portal",
+      "label": "SMART LEARN",
+      "tag": "EDUTECH",
+      "description": "Student portal within a multi-portal learning platform."
+    },
+    {
+      "repo": "authenti-guard",
+      "label": "AUTHENTI-GUARD",
+      "tag": "FRAUD DETECTION",
+      "description": "React interface for an AI-assisted fraud detection system."
+    },
+    {
+      "repo": "Taxi-booking-app-using-flutter-and-openstreetmap",
+      "label": "TAXI BOOKING",
+      "tag": "FLUTTER / MAPS",
+      "description": "Map-based taxi booking with passenger and driver experiences."
     }
   ],
   "posts": {
@@ -67,7 +116,7 @@
       "url": "mailto:kumalowilson900@gmail.com"
     }
   ],
-  "ticker_message": "BUILDING FUNDANI + DAREDZIDZO / OPEN TO COLLABORATIONS",
+  "ticker_message": "BUILDING NEOTREE + FUNDANI + DAREDZIDZO / OPEN TO COLLABORATIONS",
   "badges": [
     {
       "label": "XERJ Corpus Hub Contributor",
@@ -79,5 +128,6 @@
       "url": "https://wakatime.com/@f7004e57-3fc2-4dbc-93dd-1b52cdb2cd9f",
       "image": "https://wakatime.com/badge/user/f7004e57-3fc2-4dbc-93dd-1b52cdb2cd9f.svg?style=for-the-badge"
     }
-  ]
+  ],
+  "accent_color": "#0F57BE"
 }

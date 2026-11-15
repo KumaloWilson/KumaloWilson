@@ -30,7 +30,7 @@ OUT_DIR = os.path.join(ROOT, "assets", "stage")
 REL = "assets/stage"
 W = 900
 
-RED, BLACK, WHITE = "#e60012", "#000", "#fff"
+ACCENT, BLACK, WHITE = CFG.get("accent_color", "#0F57BE"), "#000", "#fff"
 MONO = "'JetBrains Mono','Fira Code','SF Mono',Menlo,Consolas,'DejaVu Sans Mono',monospace"
 SANS = "'Arial Black','Helvetica Neue',Arial,sans-serif"
 SERIF = "Georgia,'Times New Roman',serif"
@@ -41,7 +41,7 @@ COLLAGE_FONTS = [
     "'Arial Black',Arial,sans-serif",
     "'Trebuchet MS',Verdana,sans-serif",
 ]
-TILE_SCHEMES = [(WHITE, BLACK), (RED, WHITE), (BLACK, WHITE), (WHITE, RED)]
+TILE_SCHEMES = [(WHITE, BLACK), (ACCENT, WHITE), (BLACK, WHITE), (WHITE, ACCENT)]
 
 
 def esc(s):
@@ -162,7 +162,7 @@ def targets():
             "tag": (t.get("tag") or r.get("language") or "").upper(),
             "stars": r.get("stars", 0),
             "wip": t.get("wip", False),
-            "url": t.get("url") or r.get("url") or f"https://github.com/{CFG['github_username']}/{t['repo']}",
+            "url": t.get("url") or r.get("url") or f"https://github.com/{t.get('owner', CFG['github_username'])}/{t['repo']}",
             "description": t.get("description") or r.get("description", "").strip(),
         })
     return out
@@ -194,7 +194,7 @@ def hero():
 @keyframes spin{to{transform:rotate(360deg)}}
 """
     defs = '<pattern id="dots" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><circle cx="5" cy="5" r="2.1" fill="#000" fill-opacity=".28"/></pattern>'
-    b = [f'<rect width="{W}" height="{H}" fill="{RED}"/>']
+    b = [f'<rect width="{W}" height="{H}" fill="{ACCENT}"/>']
     rays = []
     for i in range(16):
         a0, a1 = math.radians(i * 22.5), math.radians(i * 22.5 + 11)
@@ -208,14 +208,14 @@ def hero():
     )
     first, last = CFG["name"]
     b.append(collage(first, 30, 92, 74, rng, delay=0.45))
-    b.append(collage(last, 70, 186, 66, rng, delay=0.9, schemes=[(WHITE, BLACK), (RED, BLACK), (WHITE, RED), (RED, WHITE)]))
+    b.append(collage(last, 70, 186, 66, rng, delay=0.9, schemes=[(WHITE, BLACK), (ACCENT, BLACK), (WHITE, ACCENT), (ACCENT, WHITE)]))
     role = CFG["role"]
     bw = min(525, len(role) * 12 + 40)
     b.append(
         f'<g class="slamL" style="animation-delay:1.3s"><g transform="translate(34,244) skewX(-16)">'
         f'<rect width="{bw:.0f}" height="34" fill="#fff"/>'
         f'<text x="14" y="25" font-family="{SANS}" font-size="19" fill="#000" letter-spacing="1">{esc(role)}</text></g>'
-        f'<text x="36" y="304" font-family="{MONO}" font-size="13" font-weight="700" fill="{RED}">{esc(" ▸ ".join(CFG["stack"]))}</text></g>'
+        f'<text x="36" y="304" font-family="{MONO}" font-size="13" font-weight="700" fill="{ACCENT}">{esc(" ▸ ".join(CFG["stack"]))}</text></g>'
     )
     b.append(
         f'<text x="36" y="350" font-family="{MONO}" font-size="11" fill="#fff" opacity=".7">SYS://{esc(CFG.get("runtime", "SYSTEMS"))} ONLINE  ·  LOC: {esc(CFG["location"])}  ·  <tspan class="blink">█</tspan></text>'
@@ -223,7 +223,7 @@ def hero():
     stamps = [
         (fmt(STATS["commits"]), "COMMITS", 668, 92, -7, (WHITE, BLACK)),
         (fmt(STATS["stars"]), "STARS", 806, 186, 6, (BLACK, WHITE)),
-        (str(STATS["repos"]), "REPOS", 672, 286, -3, (WHITE, RED)),
+        (str(STATS["repos"]), "REPOS", 672, 286, -3, (WHITE, ACCENT)),
     ]
     for i, (num, lbl, x, y, rot, (bg, fg)) in enumerate(stamps):
         b.append(
@@ -242,7 +242,7 @@ def about():
     H = 70 + len(lines) * 26
     b = []
     pts = f"14,22 {W-10},8 {W-24},{H-10} 4,{H-4}"
-    b.append(f'<g class="slamR"><polygon points="{pts}" fill="{RED}" transform="translate(8,6)"/>'
+    b.append(f'<g class="slamR"><polygon points="{pts}" fill="{ACCENT}" transform="translate(8,6)"/>'
              f'<polygon points="{pts}" fill="#000" stroke="#fff" stroke-width="3"/></g>')
     b.append(
         f'<g class="drop" style="animation-delay:.35s"><g transform="translate(36,4) rotate(-4) skewX(-12)">'
@@ -259,7 +259,7 @@ def about():
             f'<text clip-path="url(#{cid})" x="44" y="{y}" font-family="{SANS}" font-size="17" fill="#fff" font-weight="400">{esc(line)}</text>'
         )
         t += dur + 0.05
-    b.append(f'<polygon class="blink" points="{W-60},{H-34} {W-44},{H-34} {W-52},{H-24}" fill="{RED}"/>')
+    b.append(f'<polygon class="blink" points="{W-60},{H-34} {W-44},{H-34} {W-52},{H-24}" fill="{ACCENT}"/>')
     return svg(W, H, CFG["about"], "".join(b))
 
 
@@ -267,14 +267,14 @@ def section(title, seed):
     rng = random.Random(seed)
     H = 76
     b = [
-        f'<g class="slamL"><polygon points="10,58 {W-40},40 {W-44},50 12,66" fill="{RED}"/></g>',
+        f'<g class="slamL"><polygon points="10,58 {W-40},40 {W-44},50 12,66" fill="{ACCENT}"/></g>',
         collage(title, 20, 38, 40, rng, delay=0.1, step=0.04, wobble=0.2, outline=True),
     ]
     return svg(W, H, title, "".join(b))
 
 
 def menu_item(i, n, t):
-    H = 60
+    H = 86
     cycle = n * 1.3
     a, z = 100 * i / n, 100 * (i + 1) / n
     on = f"{a+0.5:.1f}%,{z-0.5:.1f}%{{opacity:1;transform:none}}"
@@ -289,21 +289,25 @@ def menu_item(i, n, t):
 .menu{{animation:menu .4s cubic-bezier(.2,1.5,.4,1) both}}
 @keyframes menu{{from{{transform:translate(950px,0)}}to{{transform:none}}}}
 """
-    x = 64 + i * 16
+    x = 64 + min(i, 4) * 16
     bw = 640
     # tag · status/stars; stars are hidden when zero
-    status = f'<tspan class="blink" fill="{RED}">IN DEV ●</tspan>' if t["wip"] else (f"★ {t['stars']}" if t["stars"] else "")
+    status = f'<tspan class="blink" fill="{ACCENT}">IN DEV ●</tspan>' if t["wip"] else (f"★ {t['stars']}" if t["stars"] else "")
     right = " · ".join(x for x in (esc(t["tag"]), status) if x)
+    description = t["description"]
+    if len(description) > 82:
+        description = description[:79].rstrip() + "…"
     b = [
         f'<g class="menu" style="animation-delay:{.15+i*.1:.2f}s">',
         f'<g class="hl"><polygon points="{x-18},{6} {x+bw+30},{0} {x+bw+14},{H-4} {x-30},{H-2}" fill="#fff" stroke="#000" stroke-width="2"/>'
-        f'<polygon points="{x-8},{11} {x+bw+18},{6} {x+bw+6},{H-9} {x-18},{H-7}" fill="{RED}"/>'
-        f'<text x="{x-58}" y="{H/2+9}" font-family="{SANS}" font-size="26" fill="{RED}">▶</text></g>',
+        f'<polygon points="{x-8},{11} {x+bw+18},{6} {x+bw+6},{H-9} {x-18},{H-7}" fill="{ACCENT}"/>'
+        f'<text x="{x-58}" y="{H/2+9}" font-family="{SANS}" font-size="26" fill="{ACCENT}">▶</text></g>',
         f'<g transform="translate({x},14) skewX(-14)">'
-        f'<rect x="6" y="5" width="{bw}" height="34" fill="{RED}"/>'
-        f'<rect width="{bw}" height="34" fill="#000" stroke="#fff" stroke-width="2"/>'
+        f'<rect x="6" y="5" width="{bw}" height="60" fill="{ACCENT}"/>'
+        f'<rect width="{bw}" height="60" fill="#000" stroke="#fff" stroke-width="2"/>'
         f'<text x="18" y="25" font-family="{SANS}" font-size="{19 if len(t["label"]) < 20 else 15}" fill="#fff">{esc(t["label"])}</text>'
-        f'<text x="{bw-14}" y="23" font-family="{MONO}" font-size="12" font-weight="700" fill="#fff" text-anchor="end">{right}</text></g>',
+        f'<text x="{bw-14}" y="23" font-family="{MONO}" font-size="12" font-weight="700" fill="#fff" text-anchor="end">{right}</text>'
+        f'<text x="18" y="46" font-family="{SANS}" font-size="12" fill="#fff" font-weight="400">{esc(description)}</text></g>',
         "</g>",
     ]
     title = f"{t['label']}: {t['description'] or t['tag']}" + (" (in development)" if t["wip"] else (f" — {t['stars']} stars" if t["stars"] else ""))
@@ -318,11 +322,11 @@ def post_item(i, p, latest):
     title = p["title"] if len(p["title"]) <= 58 else p["title"][:56].rstrip() + "…"
     b = [
         f'<g transform="rotate({rot} 450 36)"><g class="drop" style="animation-delay:{.15+i*.15:.2f}s">',
-        f'<polygon points="30,12 {W-30},8 {W-36},{H-8} 34,{H-4}" fill="{RED}" transform="translate(7,5)"/>',
+        f'<polygon points="30,12 {W-30},8 {W-36},{H-8} 34,{H-4}" fill="{ACCENT}" transform="translate(7,5)"/>',
         f'<polygon points="30,12 {W-30},8 {W-36},{H-8} 34,{H-4}" fill="#fff" stroke="#000" stroke-width="3"/>',
         f'<g transform="translate(52,18) skewX(-10)"><rect width="78" height="38" fill="#000"/>'
         f'<text x="39" y="17" font-family="{SANS}" font-size="16" fill="#fff" text-anchor="middle">{d.day:02d}</text>'
-        f'<text x="39" y="32" font-family="{MONO}" font-size="11" font-weight="700" fill="{RED}" text-anchor="middle">{d.strftime("%b %Y").upper()}</text></g>',
+        f'<text x="39" y="32" font-family="{MONO}" font-size="11" font-weight="700" fill="{ACCENT}" text-anchor="middle">{d.strftime("%b %Y").upper()}</text></g>',
         f'<text x="150" y="{H/2+7}" font-family="{SERIF}" font-size="20" font-style="italic" font-weight="700" fill="#000">{esc(title)}</text>',
     ]
     if latest:
@@ -334,7 +338,7 @@ def post_item(i, p, latest):
 def all_posts_item():
     H = 48
     b = [f'<g class="slamR" style="animation-delay:.6s"><g transform="translate({W-300},8) skewX(-14)">'
-         f'<rect x="5" y="4" width="250" height="30" fill="{RED}"/><rect width="250" height="30" fill="#000" stroke="#fff" stroke-width="2"/>'
+         f'<rect x="5" y="4" width="250" height="30" fill="{ACCENT}"/><rect width="250" height="30" fill="#000" stroke="#fff" stroke-width="2"/>'
          f'<text x="125" y="21" font-family="{SANS}" font-size="14" fill="#fff" text-anchor="middle">{esc(CFG.get("posts", {}).get("all_posts_label", "ALL POSTS"))} ▸</text></g></g>']
     return svg(W, H, "All posts", "".join(b))
 
@@ -342,8 +346,8 @@ def all_posts_item():
 def contact(i, c):
     w, h = 190, 68
     rot = [-5, 4, -3, 5, -4, 3][i % 6]
-    bg, fg = [(BLACK, WHITE), (WHITE, BLACK), (RED, WHITE)][i % 3]
-    sh = RED if bg != RED else BLACK
+    bg, fg = [(BLACK, WHITE), (WHITE, BLACK), (ACCENT, WHITE)][i % 3]
+    sh = ACCENT if bg != ACCENT else BLACK
     label = c["label"]
     fs = 20 if len(label) <= 9 else 15
     b = [
@@ -361,7 +365,7 @@ def ticker():
     last = posts()[0]["title"].upper() if posts() else ""
     text = (f"{fmt(STATS['commits'])} COMMITS   ★   {fmt(STATS['stars'])} STARS   ★   {STATS['repos']} PUBLIC REPOS   ★   "
             f"{STATS['followers']} FOLLOWERS   ★   {CFG.get('ticker_message', last)}   ★   THANKS FOR STOPPING BY")
-    b = [f'<g transform="skewX(-14)"><rect x="20" y="6" width="{W-34}" height="28" fill="#000" stroke="{RED}" stroke-width="3"/></g>',
+    b = [f'<g transform="skewX(-14)"><rect x="20" y="6" width="{W-34}" height="28" fill="#000" stroke="{ACCENT}" stroke-width="3"/></g>',
          marquee(text, 18, 26, W - 40, 13, "#fff")]
     return svg(W, H, text.title(), "".join(b))
 
