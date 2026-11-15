@@ -39,7 +39,9 @@ class ProfileTests(unittest.TestCase):
             config = json.loads((ROOT / 'profile.config.json').read_text())
             config['about'] = 'Systems & software <engineer> "Wilson"'
             (root / 'profile.config.json').write_text(json.dumps(config))
-            data = {'stats': {'commits': 12, 'stars': 3, 'repos': 5, 'followers': 2},
+            data = {'stats': {'commits': 12, 'stars': 3, 'repos': 5, 'followers': 2,
+                              'contributions': 120, 'private_contributions': 99,
+                              'pull_requests': 4, 'reviews': 3, 'issues': 2},
                     'repos': {}, 'posts': [{'title': 'Old post', 'url': 'https://example.com', 'date': '2026-01-01'}]}
             (root / 'assets/profile.json').write_text(json.dumps(data))
             command = ['python3', str(root / 'scripts/gen_profile.py')]
@@ -89,11 +91,21 @@ class ProfileTests(unittest.TestCase):
                 return {'user': {'repositories': {'nodes': [{'stargazerCount': 3}],
                                                  'pageInfo': {'hasNextPage': False}}}}
             return {'user': {'contributionsCollection': {'totalCommitContributions': 10,
-                                                        'restrictedContributionsCount': 99}}}
+                                                        'restrictedContributionsCount': 99,
+                                                        'totalPullRequestContributions': 4,
+                                                        'totalPullRequestReviewContributions': 3,
+                                                        'totalIssueContributions': 2,
+                                                        'contributionCalendar': {'totalContributions': 120}}}}
 
         with patch.object(fetcher, 'gql', side_effect=fake_gql):
-            self.assertEqual(fetcher.fetch_stats()['commits'],
-                             10 * (fetcher.datetime.datetime.now(fetcher.datetime.timezone.utc).year - 2025))
+            result = fetcher.fetch_stats()
+            years = fetcher.datetime.datetime.now(fetcher.datetime.timezone.utc).year - 2025
+            self.assertEqual(result['commits'], 10 * years)
+            self.assertEqual(result['private_contributions'], 99 * years)
+            self.assertEqual(result['contributions'], 120 * years)
+            self.assertEqual(result['pull_requests'], 4 * years)
+            self.assertEqual(result['reviews'], 3 * years)
+            self.assertEqual(result['issues'], 2 * years)
 
 
 if __name__ == '__main__':

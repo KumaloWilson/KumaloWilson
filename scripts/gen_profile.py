@@ -221,7 +221,7 @@ def hero():
         f'<text x="36" y="350" font-family="{MONO}" font-size="11" fill="#fff" opacity=".7">SYS://{esc(CFG.get("runtime", "SYSTEMS"))} ONLINE  ·  LOC: {esc(CFG["location"])}  ·  <tspan class="blink">█</tspan></text>'
     )
     stamps = [
-        (fmt(STATS["commits"]), "COMMITS", 668, 92, -7, (WHITE, BLACK)),
+        (fmt(STATS["contributions"]), "CONTRIBS", 668, 92, -7, (WHITE, BLACK)),
         (fmt(STATS["stars"]), "STARS", 806, 186, 6, (BLACK, WHITE)),
         (str(STATS["repos"]), "REPOS", 672, 286, -3, (WHITE, ACCENT)),
     ]
@@ -233,7 +233,7 @@ def hero():
             f'<text y="10" font-family="{SANS}" font-size="40" fill="{fg}" text-anchor="middle">{num}</text>'
             f'<text y="34" font-family="{MONO}" font-size="12" font-weight="700" fill="{fg}" text-anchor="middle" letter-spacing="2">{lbl}</text></g></g>'
         )
-    title = f"{first.title()} {last.title()} — {role.title()}. {fmt(STATS['commits'])} commits, {fmt(STATS['stars'])} stars, {STATS['repos']} public repos."
+    title = f"{first.title()} {last.title()} — {role.title()}. {fmt(STATS['contributions'])} contributions, {fmt(STATS['stars'])} stars, {STATS['repos']} public repos."
     return svg(W, H, title, "".join(b), css, defs, clip_round=14)
 
 
@@ -360,10 +360,37 @@ def contact(i, c):
     return svg(w, h, label, "".join(b))
 
 
+def activity_card():
+    metrics = [
+        ("contributions", "TOTAL CONTRIBUTIONS"),
+        ("private_contributions", "ANON. PRIVATE ACTIVITY"),
+        ("commits", "VISIBLE COMMITS"),
+        ("pull_requests", "VISIBLE PULL REQUESTS"),
+        ("reviews", "VISIBLE PR REVIEWS"),
+        ("issues", "VISIBLE ISSUES OPENED"),
+    ]
+    body = [f'<rect x="8" y="8" width="884" height="260" rx="12" fill="#000" stroke="{ACCENT}" stroke-width="3"/>']
+    for i, (key, label) in enumerate(metrics):
+        x, y = 40 + (i % 3) * 290, 58 + (i // 3) * 90
+        body.append(
+            f'<text x="{x}" y="{y}" font-family="{SANS}" font-size="30" fill="#fff">{fmt(STATS[key])}</text>'
+            f'<text x="{x}" y="{y+24}" font-family="{MONO}" font-size="11" fill="#fff">{label}</text>'
+        )
+    body.append(f'<path d="M32 198 H868" stroke="{ACCENT}" stroke-width="2"/>')
+    for i, line in enumerate([
+        "ALL-TIME / SINCE ACCOUNT CREATION / UPDATED DAILY",
+        "Totals include private activity shared through GitHub contribution settings.",
+        "Private activity is anonymous; the visible breakdown excludes hidden details.",
+    ]):
+        body.append(f'<text x="34" y="{220+i*17}" font-family="{MONO}" font-size="11" fill="#fff">{esc(line)}</text>')
+    title = "; ".join(f"{label.title()}: {fmt(STATS[key])}" for key, label in metrics)
+    return svg(W, 280, title, "".join(body))
+
+
 def ticker():
     H = 40
     last = posts()[0]["title"].upper() if posts() else ""
-    text = (f"{fmt(STATS['commits'])} COMMITS   ★   {fmt(STATS['stars'])} STARS   ★   {STATS['repos']} PUBLIC REPOS   ★   "
+    text = (f"{fmt(STATS['contributions'])} CONTRIBUTIONS   ★   {fmt(STATS['private_contributions'])} ANON. PRIVATE   ★   {fmt(STATS['commits'])} VISIBLE COMMITS   ★   {fmt(STATS['stars'])} STARS   ★   {STATS['repos']} PUBLIC REPOS   ★   "
             f"{STATS['followers']} FOLLOWERS   ★   {CFG.get('ticker_message', last)}   ★   THANKS FOR STOPPING BY")
     b = [f'<g transform="skewX(-14)"><rect x="20" y="6" width="{W-34}" height="28" fill="#000" stroke="{ACCENT}" stroke-width="3"/></g>',
          marquee(text, 18, 26, W - 40, 13, "#fff")]
@@ -393,7 +420,8 @@ def main():
         "  To change what's shown, edit profile.config.json and run:\n"
         "      python3 scripts/gen_profile.py\n"
         "  (the \"Refresh profile\" GitHub Action also does this daily with fresh stats/posts)\n-->\n",
-        f'<p align="center"><img src="{write("hero.svg", hero())}" width="100%" alt="{esc(first.title())} {esc(last.title())}, {esc(CFG["role"].title())}. {fmt(STATS["commits"])} commits, {fmt(STATS["stars"])} stars, {STATS["repos"]} public repos." /></p>\n',
+        f'<p align="center"><img src="{write("hero.svg", hero())}" width="100%" alt="{esc(first.title())} {esc(last.title())}, {esc(CFG["role"].title())}. {fmt(STATS["contributions"])} contributions, {fmt(STATS["stars"])} stars, {STATS["repos"]} public repos." /></p>\n',
+        f'<p align="center"><img src="{write("activity.svg", activity_card())}" width="100%" alt="All-time GitHub contributions, anonymous private activity, visible commits, pull requests, reviews, and issues" /></p>\n',
         f'<p align="center"><img src="{write("about.svg", about())}" width="100%" alt="{esc(CFG["about"])}" /></p>\n',
         f'<p align="center"><img src="{write("h-targets.svg", section("SELECT TARGET", 1))}" width="100%" alt="Select target" /><br>',
     ]

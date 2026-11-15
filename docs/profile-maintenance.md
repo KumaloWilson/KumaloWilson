@@ -29,10 +29,23 @@ python3 -m unittest discover -s tests
 ```
 
 Stats include public repositories, stars on public repositories, followers, and
-commit contributions across each year since the account was created. GitHub's
-contribution rules and the token's visibility determine the commit count.
-Private contribution totals are not treated as commit counts. An optional
-`STATS_TOKEN` can provide broader contribution visibility.
+all-time contributions across each year since the account was created. The hero
+shows total calendar contributions; the activity card also shows visible commits,
+pull requests, PR reviews, issues opened, and anonymous private activity.
+
+To include anonymous private activity without adding a personal token, open your
+GitHub profile, then **Contribution settings → Private contributions**, and enable
+it. [GitHub's instructions](https://docs.github.com/en/account-and-profile/how-tos/contribution-settings/manage-visibility-settings-for-private-contributions-and-achievements)
+explain this account setting. The workflow cannot enable it for you. Hidden
+private contribution counts cannot be retrieved without suitable access.
+
+Calendar totals already include the private contributions GitHub exposes, so
+the fetcher does not add the anonymous count again. Anonymous private activity
+includes several contribution types and is never added to the commit count.
+The anonymous figure is GitHub's `restrictedContributionsCount`: shared activity
+the current token cannot inspect. Visible breakdowns depend on token access and
+GitHub contribution rules; they do not promise a private breakdown by type.
+An optional `STATS_TOKEN` can provide broader visibility but is not required.
 
 ## Personalization
 
