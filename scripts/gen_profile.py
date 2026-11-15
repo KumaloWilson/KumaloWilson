@@ -173,13 +173,13 @@ def posts():
     if pc.get("count", 3) <= 0:
         return []
     seen, out = set(), []
-    for p in DATA["posts"]:
+    for p in sorted(DATA["posts"], key=lambda post: post["date"], reverse=True):
         series = re.split(r"\s*(?:#\d|:)", p["title"])[0].strip().lower()
         if pc.get("one_per_series", True) and series in seen:
             continue
         seen.add(series)
         out.append(p)
-        if len(out) >= pc.get("count", 3):
+        if len(out) >= min(3, pc.get("count", 3)):
             break
     return out
 
@@ -316,21 +316,23 @@ def menu_item(i, n, t):
 
 def post_item(i, p, latest):
     rng = random.Random(100 + i)
-    H = 72
+    H = 96
     d = datetime.date.fromisoformat(p["date"])
     rot = [-1.2, 0.9, -0.6, 1.1][i % 4]
-    title = p["title"] if len(p["title"]) <= 58 else p["title"][:56].rstrip() + "…"
+    lines = wrap(p["title"], 55)
+    if len(lines) > 2:
+        lines = [lines[0], lines[1][:52].rstrip() + "…"]
     b = [
-        f'<g transform="rotate({rot} 450 36)"><g class="drop" style="animation-delay:{.15+i*.15:.2f}s">',
+        f'<g transform="rotate({rot} 450 48)"><g class="drop" style="animation-delay:{.15+i*.15:.2f}s">',
         f'<polygon points="30,12 {W-30},8 {W-36},{H-8} 34,{H-4}" fill="{ACCENT}" transform="translate(7,5)"/>',
         f'<polygon points="30,12 {W-30},8 {W-36},{H-8} 34,{H-4}" fill="#fff" stroke="#000" stroke-width="3"/>',
         f'<g transform="translate(52,18) skewX(-10)"><rect width="78" height="38" fill="#000"/>'
         f'<text x="39" y="17" font-family="{SANS}" font-size="16" fill="#fff" text-anchor="middle">{d.day:02d}</text>'
         f'<text x="39" y="32" font-family="{MONO}" font-size="11" font-weight="700" fill="{ACCENT}" text-anchor="middle">{d.strftime("%b %Y").upper()}</text></g>',
-        f'<text x="150" y="{H/2+7}" font-family="{SERIF}" font-size="20" font-style="italic" font-weight="700" fill="#000">{esc(title)}</text>',
+        "".join(f'<text x="150" y="{39+j*25}" font-family="{SERIF}" font-size="18" font-style="italic" font-weight="700" fill="#000">{esc(line)}</text>' for j, line in enumerate(lines)),
     ]
     if latest:
-        b.append(f'<g transform="translate({W-120},10) rotate(8)"><g class="thump">' + collage("NEW!", 0, 18, 26, rng, delay=.6, step=.05, wobble=0) + "</g></g>")
+        b.append(f'<g transform="translate({W-120},64) rotate(8)"><g class="thump">' + collage("NEW!", 0, 5, 18, rng, delay=.6, step=.05, wobble=0) + "</g></g>")
     b.append("</g></g>")
     return svg(W, H, f"{p['title']} ({d.isoformat()})", "".join(b))
 
@@ -430,7 +432,7 @@ def main():
         md.append(f'<a href="{esc(t["url"])}"><img src="{write(f"target-{i}.svg", menu_item(i, len(tg), t))}" width="100%" alt="{esc(alt)}" /></a><br>')
     md.append("</p>\n")
     if ps:
-        md.append(f'<p align="center"><img src="{write("h-intel.svg", section("NEW INTEL", 2))}" width="100%" alt="New intel: latest posts" /><br>')
+        md.append(f'<p align="center"><img src="{write("h-intel.svg", section("LATEST BLOGS", 2))}" width="100%" alt="Latest blog posts" /><br>')
         for i, p in enumerate(ps):
             md.append(f'<a href="{esc(p["url"])}"><img src="{write(f"post-{i}.svg", post_item(i, p, i == 0))}" width="100%" alt="{esc(p["title"])}" /></a><br>')
         if CFG.get("posts", {}).get("all_posts_url"):

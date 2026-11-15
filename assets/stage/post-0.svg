@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 96" width="900" height="96" role="img" aria-label="Vibe Coding, Broken APIs, and Bank Breaches: Is Something Deeper Going On? (2026-04-21)"><title>Vibe Coding, Broken APIs, and Bank Breaches: Is Something Deeper Going On? (2026-04-21)</title><style>
+.pop{transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.2,1.7,.4,1) both}
+@keyframes pop{0%{transform:scale(0) rotate(-40deg);opacity:0}60%{transform:scale(1.3) rotate(8deg);opacity:1}100%{transform:scale(1) rotate(0)}}
+.wob{transform-box:fill-box;transform-origin:center;animation:wob 1.6s ease-in-out infinite alternate}
+@keyframes wob{from{transform:rotate(-4deg) translateY(-1px)}to{transform:rotate(4deg) translateY(2px)}}
+.slamL{animation:slamL .45s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes slamL{from{transform:translateX(-1100px)}to{transform:none}}
+.slamR{animation:slamR .45s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes slamR{from{transform:translateX(1100px)}to{transform:none}}
+.drop{transform-box:fill-box;transform-origin:center;animation:drop .5s cubic-bezier(.2,1.6,.4,1) both}
+@keyframes drop{from{transform:translateY(-400px) rotate(-30deg);opacity:0}to{transform:none;opacity:1}}
+.thump{transform-box:fill-box;transform-origin:center;animation:thump 1.2s ease-in-out infinite}
+@keyframes thump{0%,100%{transform:scale(1)}12%{transform:scale(1.15)}24%{transform:scale(1)}}
+.blink{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.marquee{animation:marquee linear infinite}
+@keyframes marquee{to{transform:translateX(var(--d))}}
+.type{transform-box:fill-box;transform-origin:0 50%;animation:type linear both}
+@keyframes type{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:0s!important;animation-iteration-count:1!important;animation-delay:0s!important}}
+</style><defs></defs><g transform="rotate(-1.2 450 48)"><g class="drop" style="animation-delay:0.15s"><polygon points="30,12 870,8 864,88 34,92" fill="#0F57BE" transform="translate(7,5)"/><polygon points="30,12 870,8 864,88 34,92" fill="#fff" stroke="#000" stroke-width="3"/><g transform="translate(52,18) skewX(-10)"><rect width="78" height="38" fill="#000"/><text x="39" y="17" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="16" fill="#fff" text-anchor="middle">21</text><text x="39" y="32" font-family="'JetBrains Mono','Fira Code','SF Mono',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11" font-weight="700" fill="#0F57BE" text-anchor="middle">APR 2026</text></g><text x="150" y="39" font-family="Georgia,'Times New Roman',serif" font-size="18" font-style="italic" font-weight="700" fill="#000">Vibe Coding, Broken APIs, and Bank Breaches: Is</text><text x="150" y="64" font-family="Georgia,'Times New Roman',serif" font-size="18" font-style="italic" font-weight="700" fill="#000">Something Deeper Going On?</text><g transform="translate(780,64) rotate(8)"><g class="thump"><g transform="translate(6.3,5.8) rotate(4.1)"><g class="pop" style="animation-delay:0.60s"><polygon points="-5.6,-7.9 5.3,-8.1 5.3,8.9 -5.3,7.6" fill="#fff"/><text y="5.0" font-size="13.5" fill="#0F57BE" font-family="Georgia,'Times New Roman',serif" font-weight="900" text-anchor="middle">N</text></g></g><g transform="translate(20.8,6.3) rotate(-7.2)"><g class="pop" style="animation-delay:0.65s"><polygon points="-8.0,-9.0 7.5,-10.0 7.2,10.7 -8.1,10.9" fill="#0F57BE"/><text y="6.2" font-size="16.7" fill="#fff" font-family="Georgia,'Times New Roman',serif" font-weight="900" text-anchor="middle">E</text></g></g><g transform="translate(35.6,5.2) rotate(5.5)"><g class="pop" style="animation-delay:0.70s"><polygon points="-5.6,-7.2 5.8,-8.2 6.7,9.0 -7.2,8.2" fill="#fff"/><text y="5.1" font-size="13.6" fill="#0F57BE" font-family="Georgia,'Times New Roman',serif" font-weight="900" text-anchor="middle">W</text></g></g><g transform="translate(49.8,5.6) rotate(-3.2)"><g class="pop" style="animation-delay:0.75s"><polygon points="-6.2,-8.1 7.1,-10.6 6.4,8.9 -7.6,8.8" fill="#000"/><text y="5.9" font-size="15.9" fill="#fff" font-family="'Trebuchet MS',Verdana,sans-serif" font-weight="900" text-anchor="middle">!</text></g></g></g></g></g></g></svg>

@@ -84,5 +84,21 @@
       "language": "Dart"
     }
   },
-  "posts": []
+  "posts": [
+    {
+      "title": "Vibe Coding, Broken APIs, and Bank Breaches: Is Something Deeper Going On?",
+      "url": "https://wilsonkumalo.dev/blog/vibe-coding-broken-apis-and-bank-breaches-is-something-deeper-going-on",
+      "date": "2026-04-21"
+    },
+    {
+      "title": "Windows 12 2026 Rumor Debunked: What Microsoft Is Actually Building",
+      "url": "https://wilsonkumalo.dev/blog/windows-12-in-2026-the-viral-rumor-the-debunking-and-what-microsoft-is-actually-building",
+      "date": "2026-03-17"
+    },
+    {
+      "title": "Vinext: Cloudflare's AI-Built Next.js Replacement (4.4x Faster, 57% Smaller)",
+      "url": "https://wilsonkumalo.dev/blog/vinext-how-cloudflare-rebuilt-nextjs-with-ai-in-one-week-for-dollar1100",
+      "date": "2026-02-25"
+    }
+  ]
 }
