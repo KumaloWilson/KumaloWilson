@@ -2,40 +2,15 @@
   "stats": {
     "repos": 211,
     "stars": 472,
-    "commits": 11462,
+    "commits": 11465,
+    "pull_requests": 378,
+    "reviews": 195,
+    "issues": 1,
+    "contributions": 18527,
+    "private_contributions": 6276,
     "followers": 34
   },
   "repos": {
-    "local_genai": {
-      "stars": 5,
-      "description": "LocalGenAI – Your offline AI companion, ready to assist you anytime, anywhere. Download, personalize, and chat with powerful AI models directly on your device.",
-      "url": "https://github.com/KumaloWilson/local_genai",
-      "language": "Dart"
-    },
-    "Taxi-booking-app-using-flutter-and-openstreetmap": {
-      "stars": 6,
-      "description": "This is a taxi booking app with two levels passenger and driver",
-      "url": "https://github.com/KumaloWilson/Taxi-booking-app-using-flutter-and-openstreetmap",
-      "language": "Dart"
-    },
-    "authenti-guard": {
-      "stars": 3,
-      "description": "Fraud Detection system react",
-      "url": "https://github.com/KumaloWilson/authenti-guard",
-      "language": "TypeScript"
-    },
-    "smart_learn_student_portal": {
-      "stars": 3,
-      "description": "",
-      "url": "https://github.com/KumaloWilson/smart_learn_student_portal",
-      "language": "TypeScript"
-    },
-    "chinhoyi_municipality": {
-      "stars": 4,
-      "description": "This an an house housingmanagement for the the Chinhoyi municipality.",
-      "url": "https://github.com/KumaloWilson/chinhoyi_municipality",
-      "language": "Dart"
-    },
     "neotree": {
       "stars": 8,
       "description": "Overview of Neotree project and codebase",
@@ -48,22 +23,40 @@
       "url": "https://github.com/KumaloWilson/iot-attendance-system",
       "language": "TypeScript"
     },
-    "cut_portal_web_analytics": {
-      "stars": 6,
-      "description": "This is a real-time web analytics system tailored for tracking user interactions on a CUT university student portal. The system consists of three core components:  Browser Extension – Captures user activity and sends data securely. Frontend (React) – Displays real-time and historical analytics. Backend (Express + PostgreSQL/Supabase)",
-      "url": "https://github.com/KumaloWilson/cut_portal_web_analytics",
-      "language": "TypeScript"
-    },
     "zinwa_water_meters": {
       "stars": 4,
       "description": "A comprehensive prepaid water meter management system for the Zimbabwe National Water Authority (ZINWA). This system consists of a robust Express.js backend API and a Flutter mobile application that allows customers to manage their water accounts, purchase tokens, and monitor consumption.",
       "url": "https://github.com/KumaloWilson/zinwa_water_meters",
       "language": "JavaScript"
     },
+    "cut_portal_web_analytics": {
+      "stars": 6,
+      "description": "This is a real-time web analytics system tailored for tracking user interactions on a CUT university student portal. The system consists of three core components:  Browser Extension – Captures user activity and sends data securely. Frontend (React) – Displays real-time and historical analytics. Backend (Express + PostgreSQL/Supabase)",
+      "url": "https://github.com/KumaloWilson/cut_portal_web_analytics",
+      "language": "TypeScript"
+    },
+    "chinhoyi_municipality": {
+      "stars": 4,
+      "description": "This an an house housingmanagement for the the Chinhoyi municipality.",
+      "url": "https://github.com/KumaloWilson/chinhoyi_municipality",
+      "language": "Dart"
+    },
+    "local_genai": {
+      "stars": 5,
+      "description": "LocalGenAI – Your offline AI companion, ready to assist you anytime, anywhere. Download, personalize, and chat with powerful AI models directly on your device.",
+      "url": "https://github.com/KumaloWilson/local_genai",
+      "language": "Dart"
+    },
     "lucideye": {
       "stars": 4,
       "description": "Lucid Eye is a revolutionary blind assistance app, built with Flutter and Python. Leveraging cutting-edge technology, it integrates Object Detection, OCR, and TTS features to empower the visually impaired. Seamlessly combining accessibility and innovation, Lucid Eye is a beacon of independence for users, fostering a more inclusive and connected wo",
       "url": "https://github.com/KumaloWilson/lucideye",
+      "language": "Dart"
+    },
+    "flutter_energy": {
+      "stars": 5,
+      "description": "IoT Energy Management System",
+      "url": "https://github.com/KumaloWilson/flutter_energy",
       "language": "Dart"
     },
     "fly_spotter": {
@@ -72,10 +65,22 @@
       "url": "https://github.com/KumaloWilson/fly_spotter",
       "language": "Dart"
     },
-    "flutter_energy": {
-      "stars": 5,
-      "description": "IoT Energy Management System",
-      "url": "https://github.com/KumaloWilson/flutter_energy",
+    "smart_learn_student_portal": {
+      "stars": 3,
+      "description": "",
+      "url": "https://github.com/KumaloWilson/smart_learn_student_portal",
+      "language": "TypeScript"
+    },
+    "authenti-guard": {
+      "stars": 3,
+      "description": "Fraud Detection system react",
+      "url": "https://github.com/KumaloWilson/authenti-guard",
+      "language": "TypeScript"
+    },
+    "Taxi-booking-app-using-flutter-and-openstreetmap": {
+      "stars": 6,
+      "description": "This is a taxi booking app with two levels passenger and driver",
+      "url": "https://github.com/KumaloWilson/Taxi-booking-app-using-flutter-and-openstreetmap",
       "language": "Dart"
     }
   },

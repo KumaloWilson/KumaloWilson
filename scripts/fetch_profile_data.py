@@ -62,20 +62,33 @@ def fetch_stats():
         if not page["pageInfo"]["hasNextPage"]:
             break
         cursor = page["pageInfo"]["endCursor"]
-    commits = 0
+    activity = dict(commits=0, pull_requests=0, reviews=0, issues=0,
+                    contributions=0, private_contributions=0)
     this_year = datetime.datetime.now(datetime.timezone.utc).year
     for year in range(int(u["createdAt"][:4]), this_year + 1):
         cc = gql(
             """query($login:String!,$from:DateTime!,$to:DateTime!){ user(login:$login){
                  contributionsCollection(from:$from,to:$to){
-                   totalCommitContributions}}}""",
+                   totalCommitContributions totalPullRequestContributions
+                   totalPullRequestReviewContributions totalIssueContributions
+                   restrictedContributionsCount
+                   contributionCalendar{totalContributions}}}}""",
             {"login": LOGIN, "from": f"{year}-01-01T00:00:00Z", "to": f"{year}-12-31T23:59:59Z"},
         )["user"]["contributionsCollection"]
-        commits += cc["totalCommitContributions"]
+        for key, field in {
+            "commits": "totalCommitContributions",
+            "pull_requests": "totalPullRequestContributions",
+            "reviews": "totalPullRequestReviewContributions",
+            "issues": "totalIssueContributions",
+            "private_contributions": "restrictedContributionsCount",
+        }.items():
+            activity[key] += cc[field]
+        # Calendar totals already include shared private activity. Never add it twice.
+        activity["contributions"] += cc["contributionCalendar"]["totalContributions"]
     return {
         "repos": u["repositories"]["totalCount"],
         "stars": stars,
-        "commits": commits,
+        **activity,
         "followers": u["followers"]["totalCount"],
     }
 
