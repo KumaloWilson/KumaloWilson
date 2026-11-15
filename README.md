@@ -5,7 +5,7 @@
   (the "Refresh profile" GitHub Action also does this daily with fresh stats/posts)
 -->
 
-<p align="center"><img src="assets/stage/hero.svg" width="100%" alt="Wilson Kumalo, Software &amp; Systems Engineer. 11,462 commits, 472 stars, 211 public repos." /></p>
+<p align="center"><img src="assets/stage/hero.svg" width="100%" alt="Wilson Kumalo, Software &amp; Systems Engineer. 11,465 commits, 472 stars, 211 public repos." /></p>
 
 <p align="center"><img src="assets/stage/about.svg" width="100%" alt="I build reliable systems across backend, mobile, and infrastructure. Currently building Neotree, Fundani, and Daredzidzo: neonatal healthcare and offline-first edutech for low-connectivity environments. My work spans health data integrations, IoT, analytics, and production pipelines." /></p>
 
