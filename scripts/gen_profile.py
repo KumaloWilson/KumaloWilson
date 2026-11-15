@@ -173,13 +173,13 @@ def posts():
     if pc.get("count", 3) <= 0:
         return []
     seen, out = set(), []
-    for p in DATA["posts"]:
+    for p in sorted(DATA["posts"], key=lambda post: post["date"], reverse=True):
         series = re.split(r"\s*(?:#\d|:)", p["title"])[0].strip().lower()
         if pc.get("one_per_series", True) and series in seen:
             continue
         seen.add(series)
         out.append(p)
-        if len(out) >= pc.get("count", 3):
+        if len(out) >= min(3, pc.get("count", 3)):
             break
     return out
 
@@ -221,7 +221,7 @@ def hero():
         f'<text x="36" y="350" font-family="{MONO}" font-size="11" fill="#fff" opacity=".7">SYS://{esc(CFG.get("runtime", "SYSTEMS"))} ONLINE  ·  LOC: {esc(CFG["location"])}  ·  <tspan class="blink">█</tspan></text>'
     )
     stamps = [
-        (fmt(STATS["commits"]), "COMMITS", 668, 92, -7, (WHITE, BLACK)),
+        (fmt(STATS["contributions"]), "CONTRIBS", 668, 92, -7, (WHITE, BLACK)),
         (fmt(STATS["stars"]), "STARS", 806, 186, 6, (BLACK, WHITE)),
         (str(STATS["repos"]), "REPOS", 672, 286, -3, (WHITE, ACCENT)),
     ]
@@ -233,7 +233,7 @@ def hero():
             f'<text y="10" font-family="{SANS}" font-size="40" fill="{fg}" text-anchor="middle">{num}</text>'
             f'<text y="34" font-family="{MONO}" font-size="12" font-weight="700" fill="{fg}" text-anchor="middle" letter-spacing="2">{lbl}</text></g></g>'
         )
-    title = f"{first.title()} {last.title()} — {role.title()}. {fmt(STATS['commits'])} commits, {fmt(STATS['stars'])} stars, {STATS['repos']} public repos."
+    title = f"{first.title()} {last.title()} — {role.title()}. {fmt(STATS['contributions'])} contributions, {fmt(STATS['stars'])} stars, {STATS['repos']} public repos."
     return svg(W, H, title, "".join(b), css, defs, clip_round=14)
 
 
@@ -316,21 +316,23 @@ def menu_item(i, n, t):
 
 def post_item(i, p, latest):
     rng = random.Random(100 + i)
-    H = 72
+    H = 96
     d = datetime.date.fromisoformat(p["date"])
     rot = [-1.2, 0.9, -0.6, 1.1][i % 4]
-    title = p["title"] if len(p["title"]) <= 58 else p["title"][:56].rstrip() + "…"
+    lines = wrap(p["title"], 55)
+    if len(lines) > 2:
+        lines = [lines[0], lines[1][:52].rstrip() + "…"]
     b = [
-        f'<g transform="rotate({rot} 450 36)"><g class="drop" style="animation-delay:{.15+i*.15:.2f}s">',
+        f'<g transform="rotate({rot} 450 48)"><g class="drop" style="animation-delay:{.15+i*.15:.2f}s">',
         f'<polygon points="30,12 {W-30},8 {W-36},{H-8} 34,{H-4}" fill="{ACCENT}" transform="translate(7,5)"/>',
         f'<polygon points="30,12 {W-30},8 {W-36},{H-8} 34,{H-4}" fill="#fff" stroke="#000" stroke-width="3"/>',
         f'<g transform="translate(52,18) skewX(-10)"><rect width="78" height="38" fill="#000"/>'
         f'<text x="39" y="17" font-family="{SANS}" font-size="16" fill="#fff" text-anchor="middle">{d.day:02d}</text>'
         f'<text x="39" y="32" font-family="{MONO}" font-size="11" font-weight="700" fill="{ACCENT}" text-anchor="middle">{d.strftime("%b %Y").upper()}</text></g>',
-        f'<text x="150" y="{H/2+7}" font-family="{SERIF}" font-size="20" font-style="italic" font-weight="700" fill="#000">{esc(title)}</text>',
+        "".join(f'<text x="150" y="{39+j*25}" font-family="{SERIF}" font-size="18" font-style="italic" font-weight="700" fill="#000">{esc(line)}</text>' for j, line in enumerate(lines)),
     ]
     if latest:
-        b.append(f'<g transform="translate({W-120},10) rotate(8)"><g class="thump">' + collage("NEW!", 0, 18, 26, rng, delay=.6, step=.05, wobble=0) + "</g></g>")
+        b.append(f'<g transform="translate({W-120},64) rotate(8)"><g class="thump">' + collage("NEW!", 0, 5, 18, rng, delay=.6, step=.05, wobble=0) + "</g></g>")
     b.append("</g></g>")
     return svg(W, H, f"{p['title']} ({d.isoformat()})", "".join(b))
 
@@ -360,10 +362,37 @@ def contact(i, c):
     return svg(w, h, label, "".join(b))
 
 
+def activity_card():
+    metrics = [
+        ("contributions", "TOTAL CONTRIBUTIONS"),
+        ("private_contributions", "ANON. PRIVATE ACTIVITY"),
+        ("commits", "VISIBLE COMMITS"),
+        ("pull_requests", "VISIBLE PULL REQUESTS"),
+        ("reviews", "VISIBLE PR REVIEWS"),
+        ("issues", "VISIBLE ISSUES OPENED"),
+    ]
+    body = [f'<rect x="8" y="8" width="884" height="260" rx="12" fill="#000" stroke="{ACCENT}" stroke-width="3"/>']
+    for i, (key, label) in enumerate(metrics):
+        x, y = 40 + (i % 3) * 290, 58 + (i // 3) * 90
+        body.append(
+            f'<text x="{x}" y="{y}" font-family="{SANS}" font-size="30" fill="#fff">{fmt(STATS[key])}</text>'
+            f'<text x="{x}" y="{y+24}" font-family="{MONO}" font-size="11" fill="#fff">{label}</text>'
+        )
+    body.append(f'<path d="M32 198 H868" stroke="{ACCENT}" stroke-width="2"/>')
+    for i, line in enumerate([
+        "ALL-TIME / SINCE ACCOUNT CREATION / UPDATED DAILY",
+        "Totals include private activity shared through GitHub contribution settings.",
+        "Private activity is anonymous; the visible breakdown excludes hidden details.",
+    ]):
+        body.append(f'<text x="34" y="{220+i*17}" font-family="{MONO}" font-size="11" fill="#fff">{esc(line)}</text>')
+    title = "; ".join(f"{label.title()}: {fmt(STATS[key])}" for key, label in metrics)
+    return svg(W, 280, title, "".join(body))
+
+
 def ticker():
     H = 40
     last = posts()[0]["title"].upper() if posts() else ""
-    text = (f"{fmt(STATS['commits'])} COMMITS   ★   {fmt(STATS['stars'])} STARS   ★   {STATS['repos']} PUBLIC REPOS   ★   "
+    text = (f"{fmt(STATS['contributions'])} CONTRIBUTIONS   ★   {fmt(STATS['private_contributions'])} ANON. PRIVATE   ★   {fmt(STATS['commits'])} VISIBLE COMMITS   ★   {fmt(STATS['stars'])} STARS   ★   {STATS['repos']} PUBLIC REPOS   ★   "
             f"{STATS['followers']} FOLLOWERS   ★   {CFG.get('ticker_message', last)}   ★   THANKS FOR STOPPING BY")
     b = [f'<g transform="skewX(-14)"><rect x="20" y="6" width="{W-34}" height="28" fill="#000" stroke="{ACCENT}" stroke-width="3"/></g>',
          marquee(text, 18, 26, W - 40, 13, "#fff")]
@@ -393,7 +422,8 @@ def main():
         "  To change what's shown, edit profile.config.json and run:\n"
         "      python3 scripts/gen_profile.py\n"
         "  (the \"Refresh profile\" GitHub Action also does this daily with fresh stats/posts)\n-->\n",
-        f'<p align="center"><img src="{write("hero.svg", hero())}" width="100%" alt="{esc(first.title())} {esc(last.title())}, {esc(CFG["role"].title())}. {fmt(STATS["commits"])} commits, {fmt(STATS["stars"])} stars, {STATS["repos"]} public repos." /></p>\n',
+        f'<p align="center"><img src="{write("hero.svg", hero())}" width="100%" alt="{esc(first.title())} {esc(last.title())}, {esc(CFG["role"].title())}. {fmt(STATS["contributions"])} contributions, {fmt(STATS["stars"])} stars, {STATS["repos"]} public repos." /></p>\n',
+        f'<p align="center"><img src="{write("activity.svg", activity_card())}" width="100%" alt="All-time GitHub contributions, anonymous private activity, visible commits, pull requests, reviews, and issues" /></p>\n',
         f'<p align="center"><img src="{write("about.svg", about())}" width="100%" alt="{esc(CFG["about"])}" /></p>\n',
         f'<p align="center"><img src="{write("h-targets.svg", section("SELECT TARGET", 1))}" width="100%" alt="Select target" /><br>',
     ]
@@ -402,7 +432,7 @@ def main():
         md.append(f'<a href="{esc(t["url"])}"><img src="{write(f"target-{i}.svg", menu_item(i, len(tg), t))}" width="100%" alt="{esc(alt)}" /></a><br>')
     md.append("</p>\n")
     if ps:
-        md.append(f'<p align="center"><img src="{write("h-intel.svg", section("NEW INTEL", 2))}" width="100%" alt="New intel: latest posts" /><br>')
+        md.append(f'<p align="center"><img src="{write("h-intel.svg", section("LATEST BLOGS", 2))}" width="100%" alt="Latest blog posts" /><br>')
         for i, p in enumerate(ps):
             md.append(f'<a href="{esc(p["url"])}"><img src="{write(f"post-{i}.svg", post_item(i, p, i == 0))}" width="100%" alt="{esc(p["title"])}" /></a><br>')
         if CFG.get("posts", {}).get("all_posts_url"):

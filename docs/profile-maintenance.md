@@ -29,10 +29,23 @@ python3 -m unittest discover -s tests
 ```
 
 Stats include public repositories, stars on public repositories, followers, and
-commit contributions across each year since the account was created. GitHub's
-contribution rules and the token's visibility determine the commit count.
-Private contribution totals are not treated as commit counts. An optional
-`STATS_TOKEN` can provide broader contribution visibility.
+all-time contributions across each year since the account was created. The hero
+shows total calendar contributions; the activity card also shows visible commits,
+pull requests, PR reviews, issues opened, and anonymous private activity.
+
+To include anonymous private activity without adding a personal token, open your
+GitHub profile, then **Contribution settings → Private contributions**, and enable
+it. [GitHub's instructions](https://docs.github.com/en/account-and-profile/how-tos/contribution-settings/manage-visibility-settings-for-private-contributions-and-achievements)
+explain this account setting. The workflow cannot enable it for you. Hidden
+private contribution counts cannot be retrieved without suitable access.
+
+Calendar totals already include the private contributions GitHub exposes, so
+the fetcher does not add the anonymous count again. Anonymous private activity
+includes several contribution types and is never added to the commit count.
+The anonymous figure is GitHub's `restrictedContributionsCount`: shared activity
+the current token cannot inspect. Visible breakdowns depend on token access and
+GitHub contribution rules; they do not promise a private breakdown by type.
+An optional `STATS_TOKEN` can provide broader visibility but is not required.
 
 ## Personalization
 
@@ -46,8 +59,14 @@ and the rest of the portfolio.
   for organization projects such as `neotree/neotree`. Organization project stars
   belong to that project and are not added to your personal GitHub totals.
 - `contacts` and `badges` control the links below the project cards.
-- `posts.count` is currently zero. To show writing, set a positive count and
-  supply an RSS 2.0 feed in `posts.feed_url`. The section is hidden when empty.
+- Latest blogs: `posts.archive_url` points to `https://wilsonkumalo.dev/blogs`.
+  The fetcher deduplicates the newest-first archive links, then reads article
+  titles and publication dates from public JSON-LD. It shows at most three posts,
+  including consecutive entries from the same series. The daily workflow refreshes
+  them without a token for the website. If the site is unavailable or its metadata
+  changes, the last successful posts are retained. Set `posts.count` to zero to
+  hide the section; an RSS 2.0 `posts.feed_url` is also supported when no archive
+  URL is configured.
 - `ticker_message` controls the scrolling message beneath the contact cards.
 - SVG animation respects the viewer's reduced-motion preference.
 

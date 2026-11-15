@@ -91,8 +91,11 @@
     }
   ],
   "posts": {
-    "count": 0,
-    "feed_url": ""
+    "count": 3,
+    "one_per_series": false,
+    "archive_url": "https://wilsonkumalo.dev/blogs",
+    "all_posts_url": "https://wilsonkumalo.dev/blogs",
+    "all_posts_label": "ALL BLOG POSTS"
   },
   "contacts": [
     {
