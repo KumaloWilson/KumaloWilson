@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 86" width="900" height="86" role="img" aria-label="FLY SPOTTER: Mobile image recognition for identifying and classifying fly species. — 5 stars"><title>FLY SPOTTER: Mobile image recognition for identifying and classifying fly species. — 5 stars</title><style>
+.pop{transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.2,1.7,.4,1) both}
+@keyframes pop{0%{transform:scale(0) rotate(-40deg);opacity:0}60%{transform:scale(1.3) rotate(8deg);opacity:1}100%{transform:scale(1) rotate(0)}}
+.wob{transform-box:fill-box;transform-origin:center;animation:wob 1.6s ease-in-out infinite alternate}
+@keyframes wob{from{transform:rotate(-4deg) translateY(-1px)}to{transform:rotate(4deg) translateY(2px)}}
+.slamL{animation:slamL .45s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes slamL{from{transform:translateX(-1100px)}to{transform:none}}
+.slamR{animation:slamR .45s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes slamR{from{transform:translateX(1100px)}to{transform:none}}
+.drop{transform-box:fill-box;transform-origin:center;animation:drop .5s cubic-bezier(.2,1.6,.4,1) both}
+@keyframes drop{from{transform:translateY(-400px) rotate(-30deg);opacity:0}to{transform:none;opacity:1}}
+.thump{transform-box:fill-box;transform-origin:center;animation:thump 1.2s ease-in-out infinite}
+@keyframes thump{0%,100%{transform:scale(1)}12%{transform:scale(1.15)}24%{transform:scale(1)}}
+.blink{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.marquee{animation:marquee linear infinite}
+@keyframes marquee{to{transform:translateX(var(--d))}}
+.type{transform-box:fill-box;transform-origin:0 50%;animation:type linear both}
+@keyframes type{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:0s!important;animation-iteration-count:1!important;animation-delay:0s!important}}
+
+.hl{animation:hl 15.6s steps(1) infinite}
+@keyframes hl{0%,66.7%{opacity:0;transform:translateX(-14px)}67.2%,74.5%{opacity:1;transform:none}75.0%,100%{opacity:0;transform:translateX(-14px)}}
+.menu{animation:menu .4s cubic-bezier(.2,1.5,.4,1) both}
+@keyframes menu{from{transform:translate(950px,0)}to{transform:none}}
+</style><defs></defs><g class="menu" style="animation-delay:0.95s"><g class="hl"><polygon points="110,6 798,0 782,82 98,84" fill="#fff" stroke="#000" stroke-width="2"/><polygon points="120,11 786,6 774,77 110,79" fill="#0F57BE"/><text x="70" y="52.0" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="26" fill="#0F57BE">▶</text></g><g transform="translate(128,14) skewX(-14)"><rect x="6" y="5" width="640" height="60" fill="#0F57BE"/><rect width="640" height="60" fill="#000" stroke="#fff" stroke-width="2"/><text x="18" y="25" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="19" fill="#fff">FLY SPOTTER</text><text x="626" y="23" font-family="'JetBrains Mono','Fira Code','SF Mono',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12" font-weight="700" fill="#fff" text-anchor="end">MOBILE / ML · ★ 5</text><text x="18" y="46" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#fff" font-weight="400">Mobile image recognition for identifying and classifying fly species.</text></g></g></svg>
